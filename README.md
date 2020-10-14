@@ -8,7 +8,7 @@ Describe security, privacy, compliance, and trust (25-30%)
 Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)  
 
 <details>
-<summary>Section 2: Cloud Deployment models, Cloud Computing</summary>
+<summary>Section 2: Cloud Deployment models. Private and Public clouds.</summary>
 
 [basis](images/1-cloud-computing/1-cloud-computing.png)
 [basis](images/1-cloud-computing/2-difference.png)
@@ -18,3 +18,6 @@ Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)
 [basis](images/1-cloud-computing/6-azure-hybrid-cloud-advantages.png)
 
 </details>
+
+# Cloud Computing Models
+[Cloud Computing Models](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)
