@@ -66,3 +66,29 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 
 ## Section 2 Exam Hints
 [exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
+
+# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks.
+
+## Virtual Machines.
+[Virtual Machines PDF](pdf-files/section-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
+* Azure Virtual Machines represent **IaaS** Computing Model.  
+The most flexible option.
+Types:
+1. General Purpose - (Balanced CPU and Memory)  
+2. Compute Optimized - (High CPU, lower memory)  
+3. Memory Optimized - (High memory, lower CPU)  
+4. Storage Optimized - (High disk throughput and IOPS)  
+5. GPU - (Heave rendering traffic)  
+6. High Performance Compute - (Most Powerful CPUs)  
+![More information about sizes link](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
+
+## Azure Managed Disks.
+* Azure managed disks are block-level storage volumes that are managed by Azure and used with Azure Virtual Machines.  
+Managed disks are like a physical disk in an on-premises server but, virtualized.
+**Azure will provision the disk on their own, you just specify the size of your virtual disk**
+![More information about disks link](https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview)
+* 4 disk types to aim the specific customer scenarios:
+1. Ultra disk (IO-intensive: SQL, Oracle and other transaction-heavy workloads)
+2. Premium SSD (Production)
+3. Standard SSD (Web services, lightly enterprise apps)
+4. Standard HDD  (Backups, non-critical apps)
