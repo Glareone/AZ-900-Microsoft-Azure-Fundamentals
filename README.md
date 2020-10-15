@@ -7,31 +7,35 @@ Describe core Azure services (30-35%)
 Describe security, privacy, compliance, and trust (25-30%)  
 Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)  
 
+# Section: 2. Basis. Cloud Computing Models. Regions, AZ, Management Infrastructure
+
 <details>
 <summary>Section 2: Cloud Deployment models. Private and Public clouds.</summary>
 
-[basis](images/1-cloud-computing/1-cloud-computing.png)
-[basis](images/1-cloud-computing/2-difference.png)
-[basis](images/1-cloud-computing/3-azure-public-cloud-advantages.png)
-[basis](images/1-cloud-computing/4-azure-public-cloud-disadvantages.png)
-[basis](images/1-cloud-computing/5-azure-private-cloud-advantages.png)
-[basis](images/1-cloud-computing/6-azure-hybrid-cloud-advantages.png)
+![basis](images/1-cloud-computing/1-cloud-computing.png)
+![basis](images/1-cloud-computing/2-difference.png)
+![basis](images/1-cloud-computing/3-azure-public-cloud-advantages.png)
+![basis](images/1-cloud-computing/4-azure-public-cloud-disadvantages.png)
+![basis](images/1-cloud-computing/5-azure-private-cloud-advantages.png)
+![basis](images/1-cloud-computing/6-azure-hybrid-cloud-advantages.png)
 
 </details>
 
-# Cloud Computing Models
-[Cloud Computing Models](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)  
-* Cloud Advantages against other solutions:
-[Cloud Computing Models](pdf-files/section-2/2.5+Advantages+of+Microsoft+Azure+Cloud+Computing.pdf)  
+## Cloud Computing Models. IaaS (rent a car), PaaS (take a taxi), SaaS (use the bus).
+[Cloud Computing Models PDF](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)
+1. SaaS works on a subscription based model - pay annually or monthly.  
 
-# Economies of Scale. CapEx (Capital Expenditure) vs OpEx (Operational Expenditure)
+* Cloud Advantages against other solutions:  
+[Advantages of Cloud Computing PDF](pdf-files/section-2/2.5+Advantages+of+Microsoft+Azure+Cloud+Computing.pdf)
+
+## Economies of Scale. CapEx (Capital Expenditure) vs OpEx (Operational Expenditure)
 [Economies](pdf-files/section-2/2.6+Understanding+CapEx+versus+OpEx.+Economies+of+Scale..pdf)
-* Upfront investments - buying taxis. And after upfront investments the value reduces over time.  
+* Upfront investments - buying taxis. And, after upfront investments, the value reduces over time.  
 * If you go on your own in your business - then you will pay more. You will pay less with Azure.  
 
-# Regions, Availability Zones (AZ)
-[Regions and AZ](pdf-files/section-2/2.7+Azure+Global+Infrastructure+-+Regions+and+Availability+Zones.pdf)  
-[Some additional information via link](https://heranonazure.wordpress.com/2019/02/12/azure-infrastructure-geographies-regions-zones-datacenters/)  
+## Regions, Availability Zones (AZ)
+[Regions and AZ PDF](pdf-files/section-2/2.7+Azure+Global+Infrastructure+-+Regions+and+Availability+Zones.pdf)
+[Some additional information via link PDF](https://heranonazure.wordpress.com/2019/02/12/azure-infrastructure-geographies-regions-zones-datacenters/)
 
 * Region us a part of one Geography + Specific service availability.  
 Example of Geographies: In America there are 4 geographies: United States, Azure Government, Canada, Brazil.  
@@ -42,8 +46,8 @@ Required for mission-critical applications.
 
 * Region Pairs - For disaster compliance.  When the entire Azure Region goes down - you can recover your app using another Region which is in a pair with yours.  
 
-# Azure Management Interfaces
-[Azure Management](pdf-files/section-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)  
+## Azure Management Interfaces
+[Azure Management PDF](pdf-files/section-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)  
 * Azure Portal
 
 * Azure CLI (Command Line Interface) - console for Windows\Mac\Linux
@@ -59,3 +63,6 @@ Collections of libraries for developers.
 
 * Azure Mobile App
 Monitoring the health and servers statuses, Run commands, diagnose and fix issues.
+
+## Section 2 Exam Hints
+[exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
