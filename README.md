@@ -47,7 +47,7 @@ Required for mission-critical applications.
 * Region Pairs - For disaster compliance.  When the entire Azure Region goes down - you can recover your app using another Region which is in a pair with yours.  
 
 ## Azure Management Interfaces
-[Azure Management PDF](pdf-files/section-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)
+[Azure Management PDF](pdf-files/section-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)  
 * Azure Portal
 
 * Azure CLI (Command Line Interface) - console for Windows\Mac\Linux
