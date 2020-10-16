@@ -33,16 +33,25 @@ Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)
 * Upfront investments - buying taxis. And, after upfront investments, the value reduces over time.  
 * If you go on your own in your business - then you will pay more. You will pay less with Azure.  
 
-## Regions, Availability Zones (AZ)
+## Regions, Availability Zones (AZ), Availability Sets
 [Regions and AZ PDF](pdf-files/section-2/2.7+Azure+Global+Infrastructure+-+Regions+and+Availability+Zones.pdf)
 [Some additional information via link PDF](https://heranonazure.wordpress.com/2019/02/12/azure-infrastructure-geographies-regions-zones-datacenters/)
 
 * Region us a part of one Geography + Specific service availability.  
 Example of Geographies: In America there are 4 geographies: United States, Azure Government, Canada, Brazil.  
 
-* AZ - physically separate datacenters withing Azure Region.   
+* AZ - physically separate datacenters withing Azure Region, with independent power, network and cooling.   
 Example: In West Europe Region there are 3 different AZ zones - AZ-1, AZ-2, AZ-3. They are interconnected by low-latency links.  
 Required for mission-critical applications.
+
+![Availability Zone](images/1-cloud-computing/7-az.png)
+
+* Availability Sets - is a logical grouping of two or more VMs within a DataCenter that allows Azure to understand
+ how your App is build to provide redundancy and availability.
+1. With Availability Sets, Azure will split your pool of VMs on different racks of servers which called "Fault Domains"
+ to prevent app outage in case of unplanned maintenance events (power, hw failure, etc). Racks is really different in the datacenter.
+2. The main idea - if Azure need to update the hardware or software in Fault Domain 1 - your site still be available.
+![Availability Sets](images/1-cloud-computing/8-availability-sets.png)
 
 * Region Pairs - For disaster compliance.  When the entire Azure Region goes down - you can recover your app using another Region which is in a pair with yours.  
 
@@ -69,7 +78,7 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 
 # Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks.
 
-## Virtual Machines.
+## Virtual Machines. (Availability sets described above)
 [Virtual Machines PDF](pdf-files/section-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
 * Azure Virtual Machines represent **IaaS** Computing Model.  
 The most flexible option.
@@ -80,7 +89,24 @@ Types:
 4. Storage Optimized - (High disk throughput and IOPS)  
 5. GPU - (Heave rendering traffic)  
 6. High Performance Compute - (Most Powerful CPUs)  
-![More information about sizes link](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
+
+[More information about sizes link](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
+
+## Virtual Machines Networking, VMs High Availability. Vnet.
+[Virtual Networking, VM, High Availability. PDF](pdf-files/section-3/3.5+Azure+VMs+Networking+and+High+Availability+Fundamentals+101.pdf)
+* vNET - Azure Virtual Networks. Enable to communicate between VMs and over the internet with you on-prem machines.
+* vNET - is equivalent of **VPC** in AWS Cloud.
+* Allow you using SSH to connect to your Virtual Machines throw Public IP address inside your vNET.
+![Vnet pic](images/3-virtual-machines/vNets.png)
+
+* Virtual Machine Scale Sets - group of idential VMs under Load Balancer.
+ The number of instances can be automatically increase and decrease according network load.
+![VM scale sets](images/3-virtual-machines/2-virtual-machines-scale-set.png)
+##### Bear in mind! They can be stored in a same AZ
+
+
+* Azure Batch - large-scale job scheduler. Let you make huge jobs, creating and managing tens\hundreds\thousands of VMs (pools of VMs) under the hood.
+![VM Batch](images/3-virtual-machines/3-Azure-batch.png)
 
 ## Azure Managed Disks.
 * Azure managed disks are block-level storage volumes that are managed by Azure and used with Azure Virtual Machines.  
