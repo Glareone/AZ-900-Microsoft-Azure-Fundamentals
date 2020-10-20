@@ -76,7 +76,17 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 ## Section 2 Exam Hints
 [exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
 
-# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks.
+# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks. Application Security Group (ASG). Network Security Group (NSG). Load Balancer
+<details>
+<summary>Section 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
+
+### Create Virtual Machine using Ubuntu canonical image:
+![Create VM](images/3-virtual-machines/practise/1-create-vm.png)
+![Create VM](images/3-virtual-machines/practise/2-vm-size.png)
+![Create VM](images/3-virtual-machines/practise/3-virtual-network.png)
+![Create VM](images/3-virtual-machines/practise/4-after-finishing-vm-deployment.png)
+
+</details>
 
 ## Virtual Machines. (Availability sets described above)
 [Virtual Machines PDF](pdf-files/section-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
@@ -99,7 +109,7 @@ Types:
 * Allow you using SSH to connect to your Virtual Machines throw Public IP address inside your vNET.
 ![Vnet pic](images/3-virtual-machines/vNets.png)
 
-* Virtual Machine Scale Sets - group of idential VMs under Load Balancer.
+* Virtual Machine Scale Sets - group of identical VMs under Load Balancer.
  The number of instances can be automatically increase and decrease according network load.
 ![VM scale sets](images/3-virtual-machines/2-virtual-machines-scale-set.png)
 **Bear in mind! They can be stored in a same AZ**
@@ -139,7 +149,7 @@ NSG’s control access by permitting or denying network traffic in a number of w
 
 #### Application Security Groups
 ASGs are used within a NSG to apply a network security rule to a specific workload or group of VMs – defined by ASG worked  
- as being the “network object” & expilicit IP addresses are added to this object.  
+ as being the “network object” & explicit IP addresses which are added to this object.  
     
    This provides the capability to group VMs into associated groups or workloads, simplifying the NSG rule definition process.  
  
