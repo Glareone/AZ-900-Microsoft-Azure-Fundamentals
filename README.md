@@ -148,3 +148,15 @@ ASGs are used within a NSG to apply a network security rule to a specific worklo
   
 * Allows you to group your virtual machines and define network security policies for them.
 * You add rules that control inbound traffic to instances and separate rules that control outbound traffic
+
+## Azure Load Balancer Fundamentals
+[Load Balancer](pdf-files/section-3/3.12+Azure+Load+Balancer+Fundamentals+101.pdf)
+Let you equally distributing load to a group of servers (backend servers pool)
+![Load Balancer](images/3-virtual-machines/7-load-balancer.png)
+
+#### How to apply Load Balancer
+![Load Balancer](images/3-virtual-machines/8-apply-load-balancer.png)
+1. Create and Configure Load balancer 
+2. Define Frontend pool - pool of your FE servers.
+3. Health probe - probe which controls your FE servers (is your server in a good condition and ready to work)
+4. Load Balancer Rules - for example wait request on 80 port (HTTP) from outside (Internet) and send it via 443 port (HTTPS)) to your backend pool (Frontend Web Servers).
