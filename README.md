@@ -102,7 +102,7 @@ Types:
 * Virtual Machine Scale Sets - group of idential VMs under Load Balancer.
  The number of instances can be automatically increase and decrease according network load.
 ![VM scale sets](images/3-virtual-machines/2-virtual-machines-scale-set.png)
-##### Bear in mind! They can be stored in a same AZ
+**Bear in mind! They can be stored in a same AZ**
 
 
 * Azure Batch - large-scale job scheduler. Let you make huge jobs, creating and managing tens\hundreds\thousands of VMs (pools of VMs) under the hood.
@@ -118,3 +118,33 @@ Managed disks are like a physical disk in an on-premises server but, virtualized
 2. Premium SSD (Production)
 3. Standard SSD (Web services, lightly enterprise apps)
 4. Standard HDD  (Backups, non-critical apps)
+
+### Azure Network, Application Security Groups, Network Security Groups (NSGs)
+[Additional info Link](https://www.kainos.com/microsoft-azure-nsgs-asgs-simplified/#:~:text=The%20difference,within%20a%20Network%20Security%20Group.)
+### ASG vs NSG (difference)
+* Network Security Group is the Azure Resource that you will use to enforce and control the network traffic with,  
+  whereas Application Security Group is an object reference within a Network Security Group.
+  
+ 
+#### Network Security Groups (NSGs)
+NSG’s control access by permitting or denying network traffic in a number of ways, whether it be
+[Network and Security Groups](pdf-files/section-3/3.10+Azure+Network+and+Application+Security+Groups+Fundamentals+101.pdf)
+* Azure Network Security Groups act as a firewall for your VMs. Controls inbound and outbound traffic
+* Works on subnet level or Network Interface Card (NIC)
+* Different VMs can have different NSGs applied
+* You can add rules to your NSG.
+![VM NSG](images/3-virtual-machines/4-NSG.png)
+![VM NSG2](images/3-virtual-machines/5-NSG-2.png)
+![VM NSG2](images/3-virtual-machines/6-NSG-3.png)
+
+#### Application Security Groups
+ASGs are used within a NSG to apply a network security rule to a specific workload or group of VMs – defined by ASG worked  
+ as being the “network object” & expilicit IP addresses are added to this object.  
+    
+   This provides the capability to group VMs into associated groups or workloads, simplifying the NSG rule definition process.  
+ 
+   Another great use of this is for scalability, creating the virtual machine and assigning the newly created the virtual machine 
+ to its ASG will provide it with all the NSG rules in place for that specific ASG – zero distribution to your service!
+  
+* Allows you to group your virtual machines and define network security policies for them.
+* You add rules that control inbound traffic to instances and separate rules that control outbound traffic
