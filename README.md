@@ -112,7 +112,7 @@ Types:
 * Azure managed disks are block-level storage volumes that are managed by Azure and used with Azure Virtual Machines.  
 Managed disks are like a physical disk in an on-premises server but, virtualized.
 **Azure will provision the disk on their own, you just specify the size of your virtual disk**
-![More information about disks link](https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview)
+[More information about disks link](https://docs.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview)
 * 4 disk types to aim the specific customer scenarios:
 1. Ultra disk (IO-intensive: SQL, Oracle and other transaction-heavy workloads)
 2. Premium SSD (Production)
