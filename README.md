@@ -86,6 +86,10 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 ![Create VM](images/3-virtual-machines/practise/3-virtual-network.png)
 ![Create VM](images/3-virtual-machines/practise/4-after-finishing-vm-deployment.png)
 
+### Connect to VM using Linux or Windows PC:
+#### For windows PC you have to use any SSH Client. Either to use RDP Connection
+#### For linux you just have to use SSH connection
+
 </details>
 
 ## Virtual Machines. (Availability sets described above)
