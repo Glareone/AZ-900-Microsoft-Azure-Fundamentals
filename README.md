@@ -89,6 +89,22 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 ### Connect to VM using Linux or Windows PC:
 #### For windows PC you have to use any SSH Client. Either to use RDP Connection
 #### For linux you just have to use SSH connection
+![Putty,Connection via ssh](images/3-virtual-machines/practise/5-ssh-rdp-connection.png)
+
+#### VM configuration as WebServer
+1. sudo su - update your privileges
+2. sudo apt update - update all pre-installed packages to the last versions
+3. sudo apt apache2 - apache for linux web server.
+4. sudo systemctl status apache2 - to check is apache running
+![apache2-status](images/3-virtual-machines/practise/6-systemctl-status-apache2.png)
+4.1. to test that everything is ok - curl localhost - will check will apache make a response us.
+4.2 create(mostly update) index.html page:  
+`cd /var/www/html`  
+`ls`  
+`rm index.html` -- remove previous html file
+`nano index.html` - create your own html file:
+`<html><body><h1>Webserver 01</h1></body></html>`
+5. NSG configuration
 
 </details>
 
