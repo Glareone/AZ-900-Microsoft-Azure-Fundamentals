@@ -79,6 +79,40 @@ Collections of libraries for developers.
 * Azure Mobile App
 Monitoring the health and servers statuses, Run commands, diagnose and fix issues.
 
+<details>
+<summary>Section 2: Azure Subscription</summary>
+
+* In enterprise world there could be several kind of subscriptions: Development subscription, testing subscription, production subscription
+
+* One azure account you can have one or more subscriptions.
+
+### Azure Subscriptions. Why we have to use subscription
+* Billing Boundaries: Billing Boundaries will help you to organize and control your costs using billing reports, invoices etc.
+* Access Control Boundaries: Apply access policies at the different subscription levels + control different resources.
+
+In details:
+Azure Subscription is for:
+1) Environment separation: Dev environment, Testing env, Prod env.
+2) Create distinct organizational structures: HR, Marketing, Management, IT etc. Subscription per department.
+3) Billing purposes: aggregate costs per subscription
+4) Subscription limitation: set some restrictions per subscription, for example 10vCPU per subscription, other hard limits.
+
+Another Azure Subscription Offers like $200 credit in 30 first days.
+
+### Management Groups. Azure Resource Hierarchy
+Azure Resource Hierarchy:
+1) Management Groups - is a container for multiple subscriptions.   
+  Root Management Group -> Per Department Management Group + Subscriptions
+2) Subscriptions - can have Resource Groups. 
+3) Resource Groups - can have Resources (which you can deploy in Azure: SQL DBs, VMs, etc).  
+  In my next practise it will be named "AZ900 Resource Group".
+4) Resources: SQL DBs, VMs, etc.
+
+![azure hierarchy](images/1-cloud-computing/11-azure-subscription-group-resources-hierarchy.png)
+
+
+</details>
+
 ## Section 2 Exam Hints
 [exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
 
