@@ -230,3 +230,14 @@ Let you equally distributing load to a group of servers (backend servers pool)
 2. Define Frontend pool - pool of your FE servers.
 3. Health probe - probe which controls your FE servers (is your server in a good condition and ready to work)
 4. Load Balancer Rules - for example wait request on 80 port (HTTP) from outside (Internet) and send it via 443 port (HTTPS)) to your backend pool (Frontend Web Servers).
+
+![Load Balancer](images/3-virtual-machines/9-load-balancer-backend-pool-creation.png)
+
+#### Load Balancer + Virtual Machine
+1) Create Public Load Balancer
+1.2) Create Backend Pool
+1.3) Create Health Probe for LB
+2) Create WebServers and Attach it to Load Balancer
+2.1) Configure Inbound Port rules for webservers
+![Load Balancer](images/3-virtual-machines/10-LB+BackendGroup.png)
+3) Connect to your Webservers via SSH, update them, install apache and so on.
