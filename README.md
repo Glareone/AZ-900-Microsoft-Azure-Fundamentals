@@ -116,7 +116,7 @@ Azure Resource Hierarchy:
 ## Section 2 Exam Hints
 [exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
 
-# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks. Application Security Group (ASG). Network Security Group (NSG). Load Balancer
+# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks. Application Security Group (ASG). Network Security Group (NSG).
 <details>
 <summary>Section 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
 
@@ -145,8 +145,6 @@ Azure Resource Hierarchy:
 `nano index.html` - create your own html file:
 `<html><body><h1>Webserver 01</h1></body></html>`
 5. NSG configuration
-
-</details>
 
 ## Virtual Machines. (Availability sets described above)
 [Virtual Machines PDF](pdf-files/section-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
@@ -219,6 +217,12 @@ ASGs are used within a NSG to apply a network security rule to a specific worklo
 * Allows you to group your virtual machines and define network security policies for them.
 * You add rules that control inbound traffic to instances and separate rules that control outbound traffic
 
+</details>
+
+# Section 3. Load Balancer
+<details>
+<summary>Section 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
+
 ## Azure Load Balancer Fundamentals
 [Load Balancer](pdf-files/section-3/3.12+Azure+Load+Balancer+Fundamentals+101.pdf)
 Let you equally distributing load to a group of servers (backend servers pool)
@@ -241,3 +245,25 @@ Let you equally distributing load to a group of servers (backend servers pool)
 2.1) Configure Inbound Port rules for webservers
 ![Load Balancer](images/3-virtual-machines/10-LB+BackendGroup.png)
 3) Connect to your Webservers via SSH, update them, install apache and so on.
+
+**Azure Traffic Manager is DNS-based traffic load balancer**
+[Azure Traffic Manager - DNS LOAD BALANCER](pdf-files/section-3/3.15+Azure+Traffic+Manager+Basics+101.pdf)
+
+* Works with Hybrid cloud deployment  - On + Premise + Azure Cloud. It can monitor your resources availability.
+* Able to work between different regions.
+* If you have 2 different regions - it can decide what the resource is the most suitable for end user (depending on latency)
+* If your destination region in not available - can switch end user to another region.
+
+</details>
+
+**Section 3 Exam Hints:**
+[Exam Hints](pdf-files/section-3/3.16+Module+Completion+&+Exam+Hints.pdf)
+* SLA - Service Level Agreement
+* DC - Data Center
+* VMSS - Virtual Machine Scale Sets - work only with Load Balancer
+* NSG - Network security Group - is a virtual firewall for your VMs. Different VMs can have Different NSGs applied. Tied with port configuration rules (Inbound & outbound traffic).  
+In other words - your network security rules destination is Virtual Network with your VMs.
+* ASG - Application Security Group - is a group of VMs with defined security policies for whole group.  
+In other words - your network security rules destination is a dedicated group of selected VMs.  
+![ASG](images/3-virtual-machines/11-ASG.png)
+* Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
