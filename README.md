@@ -359,3 +359,22 @@ Course Doc:
 [Azure App Service](pdf-files/section-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
 
 </details>
+
+<details>
+<summary>Section 4: Azure Event Grid.</summary>
+
+Allows you to build applications with event-based architectures.
+
+Course Doc:
+[Azure Event Grid](pdf-files/section-4/4.10+Azure+Event+Grid.pdf)  
+
+Example: 
+You subscribed to Azure Resource to know its status. For example - status of your VM.
+In EventGrid world:
+1) Select VM, Set EventHandler (set Logic App for example), if your VM stopped -> send an email with notification.
+2) Select VM, Set EventHandler (set Logic App for example), if your VM stopped -> turn your VM on again. It's one of possible ways to prevent your VM from being stopped.
+
+You can work with any Azure Portal events or define your own events.
+![EventGrid](images/4-azure-compute-options/3-Azure-Event-Grid.png)
+
+</details>
