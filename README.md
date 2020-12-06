@@ -258,3 +258,12 @@ Let you equally distributing load to a group of servers (backend servers pool)
 
 **Section 3 Exam Hints:**
 [Exam Hints](pdf-files/section-3/3.16+Module+Completion+&+Exam+Hints.pdf)
+* SLA - Service Level Agreement
+* DC - Data Center
+* VMSS - Virtual Machine Scale Sets - work only with Load Balancer
+* NSG - Network security Group - is a virtual firewall for your VMs. Different VMs can have Different NSGs applied. Tied with port configuration rules (Inbound & outbound traffic).  
+In other words - your network security rules destination is Virtual Network with your VMs.
+* ASG - Application Security Group - is a group of VMs with defined security policies for whole group.  
+In other words - your network security rules destination is a dedicated group of selected VMs.  
+![ASG](images/3-virtual-machines/11-ASG.png)
+* Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
