@@ -21,6 +21,9 @@ Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)
 
 </details>
 
+<details>
+<summary>Section 2: Cloud Computing Models. Regions, Availability Zones (AZ), Availability Sets. Azure Management Interfaces.</summary>
+
 ## Cloud Computing Models. IaaS (rent a car), PaaS (take a taxi), SaaS (use the bus).
 [Cloud Computing Models PDF](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)
 1. SaaS works on a subscription based model - pay annually or monthly.  
@@ -78,11 +81,12 @@ Collections of libraries for developers.
 
 * Azure Mobile App
 Monitoring the health and servers statuses, Run commands, diagnose and fix issues.
+</details>
 
 <details>
-<summary>Section 2: Azure Subscription</summary>
+<summary>Section 2: Azure Subscriptions. Management Groups + Azure Resource Hierarchy.</summary>
 
-* In enterprise world there could be several kind of subscriptions: Development subscription, testing subscription, production subscription
+* In enterprise world there could be several kinds of subscriptions: Development subscription, testing subscription, production subscription
 
 * One azure account you can have one or more subscriptions.
 
@@ -109,7 +113,6 @@ Azure Resource Hierarchy:
 4) Resources: SQL DBs, VMs, etc.
 
 ![azure hierarchy](images/1-cloud-computing/11-azure-subscription-group-resources-hierarchy.png)
-
 
 </details>
 
@@ -244,7 +247,7 @@ Let you equally distributing load to a group of servers (backend servers pool)
 2) Create WebServers and Attach it to Load Balancer
 2.1) Configure Inbound Port rules for webservers
 ![Load Balancer](images/3-virtual-machines/10-LB+BackendGroup.png)
-3) Connect to your Webservers via SSH, update them, install apache and so on.
+3) Connect to your Webservers via SSH, update them, install Apache and so on.
 
 **Azure Traffic Manager is DNS-based traffic load balancer**
 [Azure Traffic Manager - DNS LOAD BALANCER](pdf-files/section-3/3.15+Azure+Traffic+Manager+Basics+101.pdf)
@@ -256,7 +259,10 @@ Let you equally distributing load to a group of servers (backend servers pool)
 
 </details>
 
-**Section 3 Exam Hints:**
+<details>
+<summary>Section 3: Exam Hints</summary>
+
+**Section 3 Exam Hints:**  
 [Exam Hints](pdf-files/section-3/3.16+Module+Completion+&+Exam+Hints.pdf)
 * SLA - Service Level Agreement
 * DC - Data Center
@@ -267,3 +273,11 @@ In other words - your network security rules destination is Virtual Network with
 In other words - your network security rules destination is a dedicated group of selected VMs.  
 ![ASG](images/3-virtual-machines/11-ASG.png)
 * Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
+</details>
+
+# Section 4. Azure Compute Options
+<details>
+<summary>Section 4: Azure Compute Options</summary>
+
+
+</details>
