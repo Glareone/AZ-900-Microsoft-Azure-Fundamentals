@@ -275,7 +275,7 @@ In other words - your network security rules destination is a dedicated group of
 * Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
 </details>
 
-# Section 4. Azure Compute Options. Virtual Machines vs Docker Containers.
+# Section 4. Azure Compute Options. Virtual Machines vs Docker Containers. App Service.
 <details>
 <summary>Section 4: Azure Compute Options</summary>
 
@@ -308,4 +308,15 @@ Comparing Containers and VMs:
 * ACI - is PaaS. Allows you to upload and use your containers. ACI is good for a couple of containers. 
 * AKS is good for a fleet of them.
 
+</details>
+
+**Tips:**
+1) when you create a container - you have to text the image name. Name should be - mcr.microsoft.com/YOUR_SELECTED_CATALOG/ACI_OR_CONTAINER_NAME.  
+YOUR_SELECTED_CATALOG - is not required in simple cases.
+2) DNS Label name - you have to select the container name to reach it after that using http. <b>This name should be unique!</b>
+2.1) It's cool when <b><u>Container name</u></b> and his <b><u>DNS name label</u></b> are similar.
+3) To reach your container you have to copy FQDN (Fully Qualified Domain Name) and pass it into your browser URL.
+
+<details>
+<summary>Section 4: App Service</summary>
 </details>
