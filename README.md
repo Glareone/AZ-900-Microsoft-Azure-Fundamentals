@@ -21,6 +21,9 @@ Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)
 
 </details>
 
+<details>
+<summary>Section 2: Cloud Computing Models. Regions, Availability Zones (AZ), Availability Sets. Azure Management Interfaces.</summary>
+
 ## Cloud Computing Models. IaaS (rent a car), PaaS (take a taxi), SaaS (use the bus).
 [Cloud Computing Models PDF](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)
 1. SaaS works on a subscription based model - pay annually or monthly.  
@@ -78,11 +81,12 @@ Collections of libraries for developers.
 
 * Azure Mobile App
 Monitoring the health and servers statuses, Run commands, diagnose and fix issues.
+</details>
 
 <details>
-<summary>Section 2: Azure Subscription</summary>
+<summary>Section 2: Azure Subscriptions. Management Groups + Azure Resource Hierarchy.</summary>
 
-* In enterprise world there could be several kind of subscriptions: Development subscription, testing subscription, production subscription
+* In enterprise world there could be several kinds of subscriptions: Development subscription, testing subscription, production subscription
 
 * One azure account you can have one or more subscriptions.
 
@@ -109,7 +113,6 @@ Azure Resource Hierarchy:
 4) Resources: SQL DBs, VMs, etc.
 
 ![azure hierarchy](images/1-cloud-computing/11-azure-subscription-group-resources-hierarchy.png)
-
 
 </details>
 
@@ -244,7 +247,7 @@ Let you equally distributing load to a group of servers (backend servers pool)
 2) Create WebServers and Attach it to Load Balancer
 2.1) Configure Inbound Port rules for webservers
 ![Load Balancer](images/3-virtual-machines/10-LB+BackendGroup.png)
-3) Connect to your Webservers via SSH, update them, install apache and so on.
+3) Connect to your Webservers via SSH, update them, install Apache and so on.
 
 **Azure Traffic Manager is DNS-based traffic load balancer**
 [Azure Traffic Manager - DNS LOAD BALANCER](pdf-files/section-3/3.15+Azure+Traffic+Manager+Basics+101.pdf)
@@ -256,7 +259,10 @@ Let you equally distributing load to a group of servers (backend servers pool)
 
 </details>
 
-**Section 3 Exam Hints:**
+<details>
+<summary>Section 3: Exam Hints</summary>
+
+**Section 3 Exam Hints:**  
 [Exam Hints](pdf-files/section-3/3.16+Module+Completion+&+Exam+Hints.pdf)
 * SLA - Service Level Agreement
 * DC - Data Center
@@ -267,3 +273,117 @@ In other words - your network security rules destination is Virtual Network with
 In other words - your network security rules destination is a dedicated group of selected VMs.  
 ![ASG](images/3-virtual-machines/11-ASG.png)
 * Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
+</details>
+
+# Section 4. Azure Compute Options. Virtual Machines vs Docker Containers. App Service.
+<details>
+<summary>Section 4: Azure Compute Options</summary>
+
+Azure Compute Options, Introduction:  
+[Azure Compute Options](pdf-files/section-4/4.2+Azure+Compute+Options+Introduction.pdf)  
+
+Azure Containers Materials:  
+[Azure Containers 101](pdf-files/section-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
+
+VM:
+1) VMs need infrastructure (server in Data Center)
+2) We need Host Operating System, i.e. Windows \ Linux \ Mac.
+3) We need Hypervisor: VMware, ESXi.
+4) You may do whatever you want with your VM - install different libraries, apps, update some apps.  
+
+Containers:  
+1) Containers also need infrastructure
+2) Containers need Host Operating System: any kind of Linux OS.
+3) Instead of Hypervisor we need Docker Container Daemon - It's a process which runs behind the scenes in a Host Operating System. Managed and runs containers.
+4) Everything packed inside container: dependencies, binaries and so on. These apps packed into images.  
+
+Comparing Containers and VMs:  
+1) Containers boot time - much faster than VM boot time
+2) VMs have Guest OS. Containers have no Guest OS.
+3) VMs Resource Demanding is high (CPU, RAM, Storage). Containers Resource Demanding is pretty low.
+4) VMs isolate your systems (environments). Containers isolate your applications.    
+![VM-Container](images/4-azure-compute-options/1-vm-vs-container.png)
+
+* To run containers in Azure you might use Azure Container Instances (ACI).
+* ACI - is PaaS. Allows you to upload and use your containers. ACI is good for a couple of containers. 
+* AKS is good for a fleet of them.
+
+</details>
+
+**Tips:**
+1) when you create a container - you have to text the image name. Name should be - mcr.microsoft.com/YOUR_SELECTED_CATALOG/ACI_OR_CONTAINER_NAME.  
+YOUR_SELECTED_CATALOG - is not required in simple cases.
+2) DNS Label name - you have to select the container name to reach it after that using http. <b>This name should be unique!</b>
+2.1) It's cool when <b><u>Container name</u></b> and his <b><u>DNS name label</u></b> are similar.
+3) To reach your container you have to copy FQDN (Fully Qualified Domain Name) and pass it into your browser URL.
+
+<details>
+<summary>Section 4: App Service (PaaS) - host WebApp, RestAPI, Mobile BE.</summary>
+
+App service is PaaS.  
+Pricing is based on a selected Plan. 3 Plan options (1 of them is free and shared).  
+
+Usage:  
+1) You can use App service if you don't want to configure VMs and don't care about infrastructure. Just upload your code to Azure and this code will be run.   
+1.1) You can upload your code from a github.
+2) You can use App Service to Build & Deploy your web apps faster. You can scale your apps easier. With App Service you can use containerized web apps as well.
+3) You can get access to App Service and use it using Azure Cloud Shell (terminal right on the Azure Portal). Or using App Service menu.
+
+Course Doc:
+[Azure App Service](pdf-files/section-4/4.5+Azure+App+Service+Fundamentals+101.pdf)  
+</details>
+
+<details>
+<summary>Section 4: Serverless: Azure Functions. Azure Logic Apps.</summary>
+
+* HA - High Availability.
+Serverless ideas:
+1) App code runs based on triggers or events (run function when it receives a Http Request)
+2) Pay only for the duration your code runs.  
+
+Azure Function vs Azure Logic App.
+1) Function runs a small piece of code triggered by event. Logic Apps Automate and orchestrate tasks. Function executes code while Logic App executes workflows (using prebuilt logic blocks)
+Workflow is to visualize, design, build and automate business processes as series of steps.
+2) Logic Apps is for situations when you need to integrate apps, data, systems and services across enterprises.
+3) Logic App could be a part of Schedule or Schedule itself.
+4) Logic App could be created using Azure Portal Visual Designer or Visual Studio.
+
+Logic Apps Example:  
+![AzureLogicApps](images/4-azure-compute-options/2-Azure-Logic-Apps.png)
+
+
+Real example:
+Using the Logic App designer on the portal -> select RSS -> RSS Trigger on feeds.reuters.com/reuters/topNews -> then send an email on selected email.
+
+Course Doc:
+[Azure App Service](pdf-files/section-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
+
+</details>
+
+<details>
+<summary>Section 4: Azure Event Grid.</summary>
+
+Allows you to build applications with event-based architectures.
+
+Course Doc:
+[Azure Event Grid](pdf-files/section-4/4.10+Azure+Event+Grid.pdf)  
+
+Example: 
+You subscribed to Azure Resource to know its status. For example - status of your VM.
+In EventGrid world:
+1) Select VM, Set EventHandler (set Logic App for example), if your VM stopped -> send an email with notification.
+2) Select VM, Set EventHandler (set Logic App for example), if your VM stopped -> turn your VM on again. It's one of possible ways to prevent your VM from being stopped.
+
+You can work with any Azure Portal events or define your own events.
+![EventGrid](images/4-azure-compute-options/3-Azure-Event-Grid.png)
+
+</details>
+
+**Section 4 Exam Hints:**  
+Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&+Exam+Hints.pdf)  
+1) Azure Compute Options is an on-demand computing service.
+2) 4 Options: VMs, Containers (Run with ACI or AKS), Azure App Service, ServerLess (Functions & Logic Apps)
+3) ACI - Azure Container Instances. <b>Is PaaS</b>.
+4) App Service - Http-based service for hosting web applications, REST APIs and mobile BE. <b>Is PaaS</b>. Based on your selected Plan (has free plan).
+5) Serverless - is abstraction of servers. <b>Is PaaS</b>. You shouldn't worry how it runs in the cloud. High Availability. Event-Driven.
+6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks). 
