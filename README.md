@@ -318,5 +318,17 @@ YOUR_SELECTED_CATALOG - is not required in simple cases.
 3) To reach your container you have to copy FQDN (Fully Qualified Domain Name) and pass it into your browser URL.
 
 <details>
-<summary>Section 4: App Service</summary>
+<summary>Section 4: App Service (PaaS) - host WebApp, RestAPI, Mobile BE.</summary>
+
+App service is PaaS.  
+Pricing is based on a selected Plan. 3 Plan options (1 of them is free and shared).  
+
+Usage:  
+1) You can use App service if you don't want to configure VMs and don't care about infrastructure. Just upload your code to Azure and this code will be run.   
+1.1) You can upload your code from a github.
+2) You can use App Service to Build & Deploy your web apps faster. You can scale your apps easier. With App Service you can use containerized web apps as well.
+3) You can get access to App Service and use it using Azure Cloud Shell (terminal right on the Azure Portal). Or using App Service menu.
+
+Course Doc:
+[Azure App Service](pdf-files/section-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
 </details>
