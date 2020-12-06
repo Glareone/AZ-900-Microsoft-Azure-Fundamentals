@@ -275,9 +275,37 @@ In other words - your network security rules destination is a dedicated group of
 * Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
 </details>
 
-# Section 4. Azure Compute Options
+# Section 4. Azure Compute Options. Virtual Machines vs Docker Containers.
 <details>
 <summary>Section 4: Azure Compute Options</summary>
 
+Azure Compute Options, Introduction:  
+[Azure Compute Options](pdf-files/section-4/4.2+Azure+Compute+Options+Introduction.pdf)  
+
+Azure Containers Materials:  
+[Azure Containers 101](pdf-files/section-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
+
+VM:
+1) VMs need infrastructure (server in Data Center)
+2) We need Host Operating System, i.e. Windows \ Linux \ Mac.
+3) We need Hypervisor: VMware, ESXi.
+4) You may do whatever you want with your VM - install different libraries, apps, update some apps.  
+
+Containers:  
+1) Containers also need infrastructure
+2) Containers need Host Operating System: any kind of Linux OS.
+3) Instead of Hypervisor we need Docker Container Daemon - It's a process which runs behind the scenes in a Host Operating System. Managed and runs containers.
+4) Everything packed inside container: dependencies, binaries and so on. These apps packed into images.  
+
+Comparing Containers and VMs:  
+1) Containers boot time - much faster than VM boot time
+2) VMs have Guest OS. Containers have no Guest OS.
+3) VMs Resource Demanding is high (CPU, RAM, Storage). Containers Resource Demanding is pretty low.
+4) VMs isolate your systems (environments). Containers isolate your applications.    
+![VM-Container](images/4-azure-compute-options/1-vm-vs-container.png)
+
+* To run containers in Azure you might use Azure Container Instances (ACI).
+* ACI - is PaaS. Allows you to upload and use your containers. ACI is good for a couple of containers. 
+* AKS is good for a fleet of them.
 
 </details>
