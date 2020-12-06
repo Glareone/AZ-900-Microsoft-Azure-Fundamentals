@@ -378,3 +378,12 @@ You can work with any Azure Portal events or define your own events.
 ![EventGrid](images/4-azure-compute-options/3-Azure-Event-Grid.png)
 
 </details>
+
+**Section 4 Exam Hints:**  
+Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&+Exam+Hints.pdf)  
+1) Azure Compute Options is an on-demand computing service.
+2) 4 Options: VMs, Containers (Run with ACI or AKS), Azure App Service, ServerLess (Functions & Logic Apps)
+3) ACI - Azure Container Instances. <b>Is PaaS</b>.
+4) App Service - Http-based service for hosting web applications, REST APIs and mobile BE. <b>Is PaaS</b>. Based on your selected Plan (has free plan).
+5) Serverless - is abstraction of servers. <b>Is PaaS</b>. You shouldn't worry how it runs in the cloud. High Availability. Event-Driven.
+6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks). 
