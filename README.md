@@ -330,5 +330,29 @@ Usage:
 3) You can get access to App Service and use it using Azure Cloud Shell (terminal right on the Azure Portal). Or using App Service menu.
 
 Course Doc:
-[Azure App Service](pdf-files/section-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
+[Azure App Service](pdf-files/section-4/4.5+Azure+App+Service+Fundamentals+101.pdf)  
+</details>
+
+<details>
+<summary>Section 4: Serverless: Azure Functions. Azure Logic Apps.</summary>
+
+* HA - High Availability.
+Serverless ideas:
+1) App code runs based on triggers or events (run function when it receives a Http Request)
+2) Pay only for the duration your code runs.  
+
+Azure Function vs Azure Logic App.
+1) Function runs a small piece of code triggered by event. Logic Apps Automate and orchestrate tasks. Function executes code while Logic App executes workflows (using prebuilt logic blocks)
+Workflow is to visualize, design, build and automate business processes as series of steps.
+2) Logic Apps is for situations when you need to integrate apps, data, systems and services across enterprises.
+3) Logic App could be a part of Schedule or Schedule itself.
+4) Logic App could be created using Azure Portal Visual Designer or Visual Studio.
+
+Logic Apps Example:  
+![AzureLogicApps](images/4-azure-compute-options/2-Azure-Logic-Apps.png)
+
+
+Course Doc:
+[Azure App Service](pdf-files/section-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
+
 </details>
