@@ -352,6 +352,9 @@ Logic Apps Example:
 ![AzureLogicApps](images/4-azure-compute-options/2-Azure-Logic-Apps.png)
 
 
+Real example:
+Using the Logic App designer on the portal -> select RSS -> RSS Trigger on feeds.reuters.com/reuters/topNews -> then send an email on selected email.
+
 Course Doc:
 [Azure App Service](pdf-files/section-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
 
