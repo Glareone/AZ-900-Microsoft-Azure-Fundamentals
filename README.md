@@ -502,7 +502,7 @@ Azure file storage is a storage which you may use to share persistent informatio
 Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
 
 ## Structure:
-Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
+Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
 
 ## Info: 
 * Azure File Shares con be mounted by both: On-Premise and Cloud machines.
@@ -518,8 +518,17 @@ Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
 <details>
 <summary>Section 5: Queue Storage</summary>
 
-#### Suitable For:
-For storing large number of messages, accessible from anywhere.
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+
+## Suitable For:
+* For storing large number of messages, accessible from anywhere.  
+* For reliable messaging between application components.
+* Provides asynchronous message queueing for communication between app components.
+
+## Structure:
+Storage Account -> Storage Queue -> Queue (Container for your messages.)  
+Example of queue: incoming queue, outgoing queue, returned messages.  
+![Azure queue](images/4-azure-compute-options/4-azure-queue.png)
 
 </details>
 
