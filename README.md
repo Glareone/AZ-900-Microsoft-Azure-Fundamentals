@@ -386,4 +386,67 @@ Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&
 3) ACI - Azure Container Instances. <b>Is PaaS</b>.
 4) App Service - Http-based service for hosting web applications, REST APIs and mobile BE. <b>Is PaaS</b>. Based on your selected Plan (has free plan).
 5) Serverless - is abstraction of servers. <b>Is PaaS</b>. You shouldn't worry how it runs in the cloud. High Availability. Event-Driven.
-6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks). 
+6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks).
+
+# Section 5. Azure Storage. Blob Storage. File Storage. Table Storage. Queue Storage.
+## Azure Storage Fundamentals.
+Link to PDF: [Section-5 Azure Storage Fundamentals](pdf-files/section-5/5.2+Introduction+to+Azure+Storage.pdf)  
+* 4 Types:
+1) Azure Blob Storage - BLOB is Binary Large Objects. It is a scalable object store.
+Good for unstructured data (text or binary data).
+Suitable for:  
+1.1) Store images and files  
+1.2) Store video and audio  
+1.3) Log files  
+1.4) for BackUp and Restore purposes. For disaster recovery use cases.  
+2) Azure Files - managed file share
+3) Azure Queues - messaging store
+4) Azure Tables - NoSQL structured data
+
+<details>
+<summary>Section 5: Blob Storage</summary>
+
+BLOB is Binary Large Objects. It is a scalable object store.
+Good for unstructured data (text or binary data).
+#### Suitable for:  
+1.1) Store images and files  
+1.2) Store video and audio  
+1.3) Log files  
+1.4) for BackUp and Restore purposes. For disaster recovery use cases.  
+
+
+#### Structure:  
+Storage Account (unique namespace in Azure)-> Container (like a folder) -> Blob-files (your actual files)
+
+* Files are accessible via SMB protocol.
+
+ </details>
+ 
+<details>
+<summary>Section 5: Azure Files Storage</summary>
+
+#### Suitable For:
+Share files between Virtual Machines.
+#### Structure:
+Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
+ 
+* Azure File Shares con be mounted by both: On-Premise and Cloud machines.
+ </details>
+ 
+<details>
+<summary>Section 5: Queue Storage</summary>
+
+#### Suitable For:
+For storing large number of messages, accessible from anywhere.
+
+</details>
+
+<details>
+<summary>Section 5: Tables Store. NoSQL</summary>
+
+#### Suitable For:
+For storing structured NoSQL data, non-relational.
+
+* Table will scale as demand increases.
+
+</details>
