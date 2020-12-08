@@ -386,4 +386,177 @@ Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&
 3) ACI - Azure Container Instances. <b>Is PaaS</b>.
 4) App Service - Http-based service for hosting web applications, REST APIs and mobile BE. <b>Is PaaS</b>. Based on your selected Plan (has free plan).
 5) Serverless - is abstraction of servers. <b>Is PaaS</b>. You shouldn't worry how it runs in the cloud. High Availability. Event-Driven.
-6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks). 
+6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks).
+
+# Section 5. Azure Storage. Blob Storage. File Storage. Table Storage. Queue Storage.
+## Azure Storage Fundamentals.
+Link to PDF: [Section-5 Azure Storage Fundamentals](pdf-files/section-5/5.2+Introduction+to+Azure+Storage.pdf)  
+* 4 Types:
+1) Azure Blob Storage - BLOB is Binary Large Objects. It is a scalable object store.
+Good for unstructured data (text or binary data).
+Suitable for:  
+1.1) Store images and files  
+1.2) Store video and audio  
+1.3) Log files  
+1.4) for BackUp and Restore purposes. For disaster recovery use cases.  
+2) Azure Files - managed file share
+3) Azure Queues - messaging store
+4) Azure Tables - NoSQL structured data
+
+<details>
+<summary>Section 5: Blob Storage. Azure Data Lake Storage Gen2</summary>
+
+Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.3+Azure+Blob+Storage+Fundamentals+101.pdf)  
+
+BLOB is Binary Large Objects. It is a scalable object store.
+Good for unstructured data (text or binary data, but there is no hard restrictions).
+## Suitable for:  
+1.1) Store images and files  
+1.2) Store video and audio  
+1.3) Log files  
+1.4) for BackUp and Restore purposes. For disaster recovery use cases.  
+
+
+## Structure:  
+Storage Account (unique namespace in Azure) -> Container (like a folder) -> Blob-files (your actual files)
+
+* Files are accessible via HTTP/HTTPS protocol.
+* Support thousands of connections.
+
+## Azure Data Lake Storage Gen2:
+Azure Data Lake Storage Gen2 is a data analytics solution for the cloud.  
+* It is built using two services: Azure Storage + Azure Data Lake Storage Gen1.
+* Big Data analytics capabilities for structured and unstructured data.
+* Scalable up to exabytes, 1M TB.
+* Cost Effective
+
+## Lifecycle and Access Tiers
+Tiers:
+1) Hot - frequently accessed data
+2) Cool - infrequently accessed data (you have to store your data at min 30 days). Cheaper than Hot.
+3) Archive - rarely accessed data (you have to store your data at stored min 180 days). Cheaper than Cool.
+
+* Thus, we have multiple access tiers available, we can build a storage lifecycle policy (Cost-effective storage).
+Policy: HOT -> COOL -> Archive.
+
+## Encryption
+Automatically encrypts your data in Azure.
+2 ways:
+1) Microsoft-managed encryption keys (Azure Storage Service Encryption - SSE)
+2) Customer encryption keys (client-side encryption)
+
+## Storage Replication
+Azure always replicates data in your storage to ensure durability and high availability.
+1) "Local-redundant storage", "LRS". Can be replicated within Data Center. will be replicated 3 times in your DataCenter.
+2) "Zone-redundant storage", "ZRS". Across zonal Data Centers within region . Will be replicated on 3 storage clusters in all 3 AZs of the region.
+3) "Geo-redundant storage" "GRS". Across geographically separated regions. Will be replicated to a secondary region (min 300 miles away.)
+4) "Read-access geo-redundant storage", "RA-GRS". Provides read-only access in the secondary location. In Addition to "GRS".
+Preview Replica Types:
+5) "Geo-Zone-redundant storage", "DZRS" combines "ZRS" and "GRS". Data in 3 AZs in a 1st region and 1AZs in a 2nd region.
+6) "Read-access geo-zone-redundant storage".
+
+
+* Redundancy option can be selected when account is created.
+
+</details>
+ 
+<details>
+<summary>Section 5: Azure Managed Disks Fundamentals 101 (Virtual Hard Drive For 1 VM) / Azure Files Storage (Disks to share info between VMs)</summary>
+
+# Azure Managed Disks
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
+
+
+## Suitable For:
+Share files between Virtual Machines.
+
+
+* Azure will manage the storage .VHD files (Virtual Hard Drives). It's just a volume where you can create a disk using "Disk Management" tool.
+
+## Disk Options: 
+1) Standard HDD
+2) Standard SSD
+3) Premium SSD
+4) Ultradisk
+
+## Disk Roles:
+1) OS disk - has preinstalled OS
+2) Temporary disk - short-term storage. Data can persist a VM reboot (in normal condition). Power off = data is lost.
+3) Data disk
+
+## Redundancy:
+99.999% of availability
+11th 9's -> local redundant storage
+16th 9's -> Geo-ZRS 
+* Disks are isolated from each other to avoid Single Point of Failure (SPOF)
+* Fully integrated with AZ. They are protected from DataCenter failures.
+
+ 
+
+* Assign specific permissions for a managed disk to one or more users.
+* Every Azure VM machine comes with OS disk + Temp disk. And you are able to attach Data disk.
+
+# Azure File Storage
+Azure file storage is a storage which you may use to share persistent information between different Virtual Machines. 
+
+Link to PDF: [Section-5 Azure File Storage](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
+
+## Structure:
+Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
+
+## Info: 
+* Azure File Shares con be mounted by both: On-Premise and Cloud machines.
+* Access via SMB Protocol
+* Can be mounted (attached) by any machines: on-premise and cloud machines.
+* Work on Windows, Mac and Linux.
+* Azure takes care of hardware and software updates + system patching
+* Work with Azure CLI, Powershell.
+* No Windows maintenance.
+
+</details>
+ 
+<details>
+<summary>Section 5: Queue Storage</summary>
+
+Link to PDF: [Section-5 Azure Queue Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+
+## Suitable For:
+* For storing large number of messages, accessible from anywhere.  
+* For reliable messaging between application components.
+* Provides asynchronous message queueing for communication between app components.
+
+## Structure:
+Storage Account -> Storage Queue -> Queue (Container for your messages.)  
+Example of queue: incoming queue, outgoing queue, returned messages.  
+![Azure queue](images/4-azure-compute-options/4-azure-queue.png)
+
+</details>
+
+<details>
+<summary>Section 5: Tables Store. for NoSQL data</summary>
+It's a "Key / attribute" storage with a schemaless design.  
+Something like between Redis (key-value) and Mongo (BSON). Or even Excel.
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+
+## Suitable For:
+For storing structured NoSQL data, non-relational.
+
+* Table will scale as demand increases.
+* Doesn't have fixed data structure.
+
+### Data Example:
+![Azure table data](images/4-azure-compute-options/6-Azure-Table(NoSQL).png)
+
+## Structure:
+Storage Account -> Table
+![Azure table](images/4-azure-compute-options/5-Azure-Table.png)
+
+## Info:
+* Process up to 20.000 rows\s per Storage Account
+* Process up to 2000\s per Table
+
+</details>
+
+**Section 5 Exam Hints:**  
+Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
