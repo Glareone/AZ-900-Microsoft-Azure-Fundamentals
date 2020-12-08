@@ -404,23 +404,61 @@ Suitable for:
 4) Azure Tables - NoSQL structured data
 
 <details>
-<summary>Section 5: Blob Storage</summary>
+<summary>Section 5: Blob Storage. Azure Data Lake Storage Gen2</summary>
+
+Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.3+Azure+Blob+Storage+Fundamentals+101.pdf)  
 
 BLOB is Binary Large Objects. It is a scalable object store.
-Good for unstructured data (text or binary data).
-#### Suitable for:  
+Good for unstructured data (text or binary data, but there is no hard restrictions).
+## Suitable for:  
 1.1) Store images and files  
 1.2) Store video and audio  
 1.3) Log files  
 1.4) for BackUp and Restore purposes. For disaster recovery use cases.  
 
 
-#### Structure:  
+## Structure:  
 Storage Account (unique namespace in Azure)-> Container (like a folder) -> Blob-files (your actual files)
 
-* Files are accessible via SMB protocol.
+* Files are accessible via HTTP/HTTPS protocol.
+* Support thousands of connections.
 
- </details>
+## Azure Data Lake Storage Gen2:
+Azure Data Lake Storage Gen2 is a data analytics solution for the cloud.  
+* It is built using two services: Azure Storage + Azure Data Lake Storage Gen1.
+* Big Data analytics capabilities for structured and unstructured data.
+* Scalable up to exabytes, 1M TB.
+* Cost Effective
+
+## Lifecycle and Access Tiers
+Tiers:
+1) Hot - frequently accessed data
+2) Cool - infrequently accessed data (you have to store your data at min 30 days). Cheaper than Hot.
+3) Archive - rarely accessed data (you have to store your data at stored min 180 days). Cheaper than Cool.
+
+* Thus, we have multiple access tiers available, we can build a storage lifecycle policy (Cost-effective storage).
+Policy: HOT -> COOL -> Archive.
+
+## Encryption
+Automatically encrypts your data in Azure.
+2 ways:
+1) Microsoft-managed encryption keys (Azure Storage Service Encryption - SSE)
+2) Customer encryption keys (client-side encryption)
+
+## Storage Replication
+Azure always replicates data in your storage to ensure durability and high availability.
+1) "Local-redundant storage", "LRS". Can be replicated within Data Center. will be replicated 3 times.
+2) "Zone-redundant storage", "ZRS". Across zonal Data Centers within region . Will be replicated on 3 storage clusters in a single region (3 AZs) 
+3) "Geo-redundant storage" "GRS". Across geographically separated regions. Will be replicated to a secondary region (min 300 miles away.)
+4) "Read-access geo-redundant storage", "RA-GRS". Provides read-only access in the secondary location. In Addition to "GRS".
+Preview Replica Types:
+5) "Geo-Zone-redundant storage", "DZRS" combines "ZRS" and "GRS". Data in 3 AZs in a 1st region and 3AZs in a 2nd region.
+6) "Read-access geo-zone-redundant storage".
+
+
+* Redundancy option can be selected when account is created.
+
+</details>
  
 <details>
 <summary>Section 5: Azure Files Storage</summary>
