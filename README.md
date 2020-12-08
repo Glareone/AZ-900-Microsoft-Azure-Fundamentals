@@ -447,12 +447,12 @@ Automatically encrypts your data in Azure.
 
 ## Storage Replication
 Azure always replicates data in your storage to ensure durability and high availability.
-1) "Local-redundant storage", "LRS". Can be replicated within Data Center. will be replicated 3 times.
-2) "Zone-redundant storage", "ZRS". Across zonal Data Centers within region . Will be replicated on 3 storage clusters in a single region (3 AZs) 
+1) "Local-redundant storage", "LRS". Can be replicated within Data Center. will be replicated 3 times in your DataCenter.
+2) "Zone-redundant storage", "ZRS". Across zonal Data Centers within region . Will be replicated on 3 storage clusters in all 3 AZs of the region.
 3) "Geo-redundant storage" "GRS". Across geographically separated regions. Will be replicated to a secondary region (min 300 miles away.)
 4) "Read-access geo-redundant storage", "RA-GRS". Provides read-only access in the secondary location. In Addition to "GRS".
 Preview Replica Types:
-5) "Geo-Zone-redundant storage", "DZRS" combines "ZRS" and "GRS". Data in 3 AZs in a 1st region and 3AZs in a 2nd region.
+5) "Geo-Zone-redundant storage", "DZRS" combines "ZRS" and "GRS". Data in 3 AZs in a 1st region and 1AZs in a 2nd region.
 6) "Read-access geo-zone-redundant storage".
 
 
