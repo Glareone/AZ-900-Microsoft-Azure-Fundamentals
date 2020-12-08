@@ -461,22 +461,22 @@ Preview Replica Types:
 </details>
  
 <details>
-<summary>Section 5: Azure Files Storage (Virtual Hard Drives). Azure Managed Disks Fundamentals 101.</summary>
+<summary>Section 5: Azure Managed Disks Fundamentals 101 (Virtual Hard Drive For 1 VM) / Azure Files Storage (Disks to share info between VMs)</summary>
 
-Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
+# Azure Managed Disks
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
+
 
 ## Suitable For:
 Share files between Virtual Machines.
-## Structure:
-Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
 
-* Azure will manage the storage .VHD files (Virtual Hard Drives)
-* Files are accessible via SMB protocol.
+
+* Azure will manage the storage .VHD files (Virtual Hard Drives). It's just a volume where you can create a disk using "Disk Management" tool.
 
 ## Disk Options: 
 1) Standard HDD
 2) Standard SSD
-3) Premiun SSD
+3) Premium SSD
 4) Ultradisk
 
 ## Disk Roles:
@@ -492,12 +492,28 @@ Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
 * Fully integrated with AZ. They are protected from DataCenter failures.
 
  
-## Info: 
-* Azure File Shares con be mounted by both: On-Premise and Cloud machines.
+
 * Assign specific permissions for a managed disk to one or more users.
 * Every Azure VM machine comes with OS disk + Temp disk. And you are able to attach Data disk.
 
- </details>
+# Azure File Storage
+Azure file storage is a storage which you may use to share persistent information between different Virtual Machines. 
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
+
+## Structure:
+Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
+
+## Info: 
+* Azure File Shares con be mounted by both: On-Premise and Cloud machines.
+* Access via SMB Protocol
+* Can be mounted (attached) by any machines: on-premise and cloud machines.
+* Work on Windows, Mac and Linux.
+* Azure takes care of hardware and software updates + system patching
+* Work with Azure CLI, Powershell.
+* No Windows maintenance.
+
+</details>
  
 <details>
 <summary>Section 5: Queue Storage</summary>
