@@ -499,7 +499,7 @@ Share files between Virtual Machines.
 # Azure File Storage
 Azure file storage is a storage which you may use to share persistent information between different Virtual Machines. 
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
+Link to PDF: [Section-5 Azure File Storage](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
 
 ## Structure:
 Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
@@ -518,7 +518,7 @@ Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
 <details>
 <summary>Section 5: Queue Storage</summary>
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+Link to PDF: [Section-5 Azure Queue Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
 
 ## Suitable For:
 * For storing large number of messages, accessible from anywhere.  
@@ -533,11 +533,30 @@ Example of queue: incoming queue, outgoing queue, returned messages.
 </details>
 
 <details>
-<summary>Section 5: Tables Store. NoSQL</summary>
+<summary>Section 5: Tables Store. for NoSQL data</summary>
+It's a "Key / attribute" storage with a schemaless design.  
+Something like between Redis (key-value) and Mongo (BSON). Or even Excel.
 
-#### Suitable For:
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+
+## Suitable For:
 For storing structured NoSQL data, non-relational.
 
 * Table will scale as demand increases.
+* Doesn't have fixed data structure.
+
+### Data Example:
+![Azure table data](images/4-azure-compute-options/6-Azure-Table(NoSQL).png)
+
+## Structure:
+Storage Account -> Table
+![Azure table](images/4-azure-compute-options/5-Azure-Table.png)
+
+## Info:
+* Process up to 20.000 rows\s per Storage Account
+* Process up to 2000\s per Table
 
 </details>
+
+**Section 5 Exam Hints:**  
+Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
