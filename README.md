@@ -418,7 +418,7 @@ Good for unstructured data (text or binary data, but there is no hard restrictio
 
 
 ## Structure:  
-Storage Account (unique namespace in Azure)-> Container (like a folder) -> Blob-files (your actual files)
+Storage Account (unique namespace in Azure) -> Container (like a folder) -> Blob-files (your actual files)
 
 * Files are accessible via HTTP/HTTPS protocol.
 * Support thousands of connections.
@@ -461,14 +461,42 @@ Preview Replica Types:
 </details>
  
 <details>
-<summary>Section 5: Azure Files Storage</summary>
+<summary>Section 5: Azure Files Storage (Virtual Hard Drives). Azure Managed Disks Fundamentals 101.</summary>
 
-#### Suitable For:
+Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
+
+## Suitable For:
 Share files between Virtual Machines.
-#### Structure:
+## Structure:
 Storage Account -> Azure Files -> Windows VM01 and Windows VM02.
+
+* Azure will manage the storage .VHD files (Virtual Hard Drives)
+* Files are accessible via SMB protocol.
+
+## Disk Options: 
+1) Standard HDD
+2) Standard SSD
+3) Premiun SSD
+4) Ultradisk
+
+## Disk Roles:
+1) OS disk - has preinstalled OS
+2) Temporary disk - short-term storage. Data can persist a VM reboot (in normal condition). Power off = data is lost.
+3) Data disk
+
+## Redundancy:
+99.999% of availability
+11th 9's -> local redundant storage
+16th 9's -> Geo-ZRS 
+* Disks are isolated from each other to avoid Single Point of Failure (SPOF)
+* Fully integrated with AZ. They are protected from DataCenter failures.
+
  
+## Info: 
 * Azure File Shares con be mounted by both: On-Premise and Cloud machines.
+* Assign specific permissions for a managed disk to one or more users.
+* Every Azure VM machine comes with OS disk + Temp disk. And you are able to attach Data disk.
+
  </details>
  
 <details>
