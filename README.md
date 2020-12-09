@@ -559,15 +559,17 @@ Storage Account -> Table
 </details>
 
 **Section 5 Exam Hints:**  
-Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
+Link to PDF: [Section-5 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
 
 # Section 6. Databases in Azure
 <details>
 <summary>Section 6: Cosmos Database. Document Database</summary>
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
+Link to PDF: [Section-5 Azure CosmosDB](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
 * Multi-model database service.
 * It's a document DB. Format is JSON.
+* Schema-agnostic, but generally classified as NoSQL database
+* horizontally scalable.
 
 ## Key Features:
 * Global Distribution - transparent multi-region distribution. It replicates your data in multi-region environment transparently.
@@ -597,10 +599,11 @@ Items in a container are divided into distinct subsets called logical partitions
 </details>
 
 <details>
-<summary>Section 6: SQL Database</summary>
+<summary>Section 6: SQL Database. Managed Service (like PaaS).</summary>
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
-* Database-as-a-service (DBaaS).
+Link to PDF: [Section-5 Azure Database Fundamentals](pdf-files/section-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
+* general-purpose relational Database-as-a-service (DBaaS).
+* Managed Service (like PaaS)
 
 ## Deployment Models:
 * Single - isolated database, fully managed.
@@ -612,7 +615,7 @@ Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.4+Azure+SQL+D
 
 ## Pricing Models:
 * Database Transaction Unit (DTU) - With DTU you are able to scale storage with compute at the same time
-* Virtual Core (vCore) - with vCore you are able to scale storage independently of compute.
+* Virtual Core (vCore) - with vCore you are able to scale storage independently of compute (virtual cores and storage).
 * Serverless model - vCore based.
 
 Tip: 
@@ -623,12 +626,16 @@ Tip:
 <details>
 <summary>Section 6:  MySQL. PostgreSQL</summary>
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.6+Azure+Database+for+MySQL+Basics+101.pdf)
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.8+Azure+Database+for+PostgreSQL+Basics+101.pdf)
+Link to PDF: [Section-6 MySQL](pdf-files/section-6/6.6+Azure+Database+for+MySQL+Basics+101.pdf)
+Link to PDF: [Section-6 PostgreSQL](pdf-files/section-6/6.8+Azure+Database+for+PostgreSQL+Basics+101.pdf)
+
+## MySQL
+* HA
+* Pay-as-you-go pricing
 
 ## Postgre deployment options:
-* Single Server - allow only vertical scaling
-* Hyperscale - scales db horizontally (multiple machines of the same type), faster responses on large datasets.  
+* Single Server - allow only **vertical scaling**
+* Hyperscale - **scales db horizontally** (multiple machines of the same type), faster responses on large datasets.  
 It goes as a part of server group with coordinator node and worker node roles.
 
 ### Both dbs engines:
@@ -642,7 +649,7 @@ It goes as a part of server group with coordinator node and worker node roles.
 **EXPENSIVE CHOICE: minimum is 640eur per month for 4-vCore and 32GB of Storage**
 **Deploying up to 6 hours**
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
+Link to PDF: [Section-6 Azure SQL Managed Instance](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
 * Fully managed isolated instance-as-a-service with 100% features of SQL Server Database.
 * Best option for most migrations to Azure Cloud (let you shift your on-premise customers to the cloud).  
 You literally can take your application as it is without modifying it and running it afterwards in the cloud.
@@ -674,7 +681,24 @@ You literally can take your application as it is without modifying it and runnin
 1) General Purpose
 2) Business critical (low latency)
 
+</details>
 
+<details>
+<summary>Section 6: Azure Database Migration Service. Seamless migrations from multiple database sources to Azure Cloud</summary>
 
+* Migration Service is a service designed to enable seamless migrations from multiple database sources to Azure Cloud.
+Link to PDF: [Section-5 Azure Database Migration](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
+
+## Supported Databases for different scenarios:
+Lost of scenarios described in the official doc. Different database sources and different available database destinations (in Azure of course).
+[Microsoft Documentation for Azure Database Migration Service](https://docs.microsoft.com/en-us/azure/dms/resource-scenario-status)
+
+## Key Features:
+* Support different migration scenarios from on-premise to cloud database: offline (one-time) and online (continuous sync)
 
 </details>
+
+**Section 6 Exam Hints:**  
+Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
+
+
