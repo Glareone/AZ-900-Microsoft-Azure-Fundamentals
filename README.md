@@ -563,7 +563,60 @@ Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&
 
 # Section 6. Databases in Azure
 <details>
-<summary>Section 6: Cosmos Database</summary>
+<summary>Section 6: Cosmos Database. Document Database.</summary>
 
 Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
+* Multi-model database service.
+* It's a document DB. Format is JSON.
+
+## Key Features:
+* Global Distribution - transparent multi-region distribution. It replicates your data in multi-region environment transparently.
+* Regional presence - 56+ regions
+* Highly available - 99.999%
+* Elastic Scale
+* Low latency guarantee (<10ms of 99% of requests)
+* No Schema or index management. Can have different properties or formats.
+
+## Multiple API available (Which technology is under the hood on your preference):
+* SQL (core API) - Also has JSON Formatted documents, but works with SQL-query syntax.
+* Cassandra
+* MongoDB
+* Gremlin
+* Azure Table Storage
+
+## Structure:
+Database Account -> Database -> Container (Table \ Collection) -> Items (rows of data \ elements)
+
+## Costs. Request Units (RUs):
+* The cost of usage depends on Request Units - read, insert, delete, query.
+* No matter how much CPU or RAM used.
+
+## Partitions:
+Items in a container are divided into distinct subsets called logical partitions. 
+
+</details>
+
+<details>
+
+<summary>Section 6: SQL Database.</summary>
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
+* Database-as-a-service (DBaaS).
+
+## Deployment Models:
+* Single - isolated database, fully managed.
+* Elastic Pool - collection of single databases with a shared set of resources.
+* Managed instance - A fully managed instance of SQL Server. Full SQL server capabilities (vs Single) - Allows you to easy accommodate and migrate your database to the cloud.
+
+* Azure SQL Database Server - is a center administrative point where you are able to configure your databases.
+![Azure database](images/5-azure-database/1-azure-database.png)
+
+## Pricing Models:
+* Database Transaction Unit (DTU) - With DTU you are able to scale storage with compute at the same time
+* Virtual Core (vCore) - with vCore you are able to scale storage independently of compute.
+* Serverless model - vCore based.
+
+Tip: 
+1) your traditional sql server license on On-premise database - may be used only with vCore model.
+2) when you create SQL Database you must select Server - this Server is SQL SERVER.
 </details>
