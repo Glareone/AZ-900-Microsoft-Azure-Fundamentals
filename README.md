@@ -560,3 +560,10 @@ Storage Account -> Table
 
 **Section 5 Exam Hints:**  
 Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
+
+# Section 6. Databases in Azure
+<details>
+<summary>Section 6: Cosmos Database</summary>
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
+</details>
