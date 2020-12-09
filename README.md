@@ -563,7 +563,7 @@ Link to PDF: [Section-4 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&
 
 # Section 6. Databases in Azure
 <details>
-<summary>Section 6: Cosmos Database. Document Database.</summary>
+<summary>Section 6: Cosmos Database. Document Database</summary>
 
 Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
 * Multi-model database service.
@@ -597,8 +597,7 @@ Items in a container are divided into distinct subsets called logical partitions
 </details>
 
 <details>
-
-<summary>Section 6: SQL Database.</summary>
+<summary>Section 6: SQL Database</summary>
 
 Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
 * Database-as-a-service (DBaaS).
@@ -619,4 +618,63 @@ Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.4+Azure+SQL+D
 Tip: 
 1) your traditional sql server license on On-premise database - may be used only with vCore model.
 2) when you create SQL Database you must select Server - this Server is SQL SERVER.
+</details>
+
+<details>
+<summary>Section 6:  MySQL. PostgreSQL</summary>
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.6+Azure+Database+for+MySQL+Basics+101.pdf)
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.8+Azure+Database+for+PostgreSQL+Basics+101.pdf)
+
+## Postgre deployment options:
+* Single Server - allow only vertical scaling
+* Hyperscale - scales db horizontally (multiple machines of the same type), faster responses on large datasets.  
+It goes as a part of server group with coordinator node and worker node roles.
+
+### Both dbs engines:
+1) support automatic backups
+2) built-in security: in-motion or at-rest.
+</details>
+
+<details>
+<summary>Section 6: Azure SQL Managed Instance ("AZURE SQL"). PaaS. Expensive! Fully managed instance-as-a-service with 100% features of SQL Server Database</summary>
+
+**EXPENSIVE CHOICE: minimum is 640eur per month for 4-vCore and 32GB of Storage**
+**Deploying up to 6 hours**
+
+Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
+* Fully managed isolated instance-as-a-service with 100% features of SQL Server Database.
+* Best option for most migrations to Azure Cloud (let you shift your on-premise customers to the cloud).  
+You literally can take your application as it is without modifying it and running it afterwards in the cloud.
+* Reduce management overhead. Patching, versioning and updates.
+* High availability. 99,99%
+
+## Suitable For:
+* On-premise applications which you would like to switch on Azure Cloud database (and migrate all data there).
+* For modern applications as well created from scratch.
+
+## Structure:
+1) Network Group
+2) Route table
+3) Virtual network
+4) Everything for databases
+
+
+## Key Features and Benefits
+* PaaS, quick provisioning and scaling.
+* Combines best features of SQL database & Server Engine.
+* 99,99% of availability. HA.
+* vNet (virtual network) is not connected to your database. It's in isolated environment and isolated from another either.
+* Azure Active Directory (AD) authentication. SSO Support.
+* You can use Azure resource manager API for automating provisioning and scaling. (you can do provisioning manually or automatically via Azure resource manager API)
+
+## Purchasing models
+* vCore - allows you to change compute, memory and storage independently, based on your workload needs.
+* Azure SQL Managed Instance is available in two service tiers (both options has 99,99% of availability):  
+1) General Purpose
+2) Business critical (low latency)
+
+
+
+
 </details>
