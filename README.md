@@ -404,7 +404,7 @@ Suitable for:
 4) Azure Tables - NoSQL structured data
 
 <details>
-<summary>Section 5: Blob Storage. Azure Data Lake Storage Gen2</summary>
+<summary>Section 5: Blob Storage (Azure Containers). Azure Data Lake Storage Gen2</summary>
 
 Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.3+Azure+Blob+Storage+Fundamentals+101.pdf)  
 
@@ -461,7 +461,7 @@ Preview Replica Types:
 </details>
  
 <details>
-<summary>Section 5: Azure Managed Disks Fundamentals 101 (Virtual Hard Drive For 1 VM) / Azure Files Storage (Disks to share info between VMs)</summary>
+<summary>Section 5: Azure Managed Disks (Dedicated Virtual Hard Drive Disk For 1 VM)</summary>
 
 # Azure Managed Disks
 Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
@@ -495,7 +495,11 @@ Share files between Virtual Machines.
 
 * Assign specific permissions for a managed disk to one or more users.
 * Every Azure VM machine comes with OS disk + Temp disk. And you are able to attach Data disk.
+</details>
 
+<details>
+<summary>Section 5: Azure Files Shares (Disks to share info between Virtual Machines). Serverless</summary>
+ 
 # Azure File Storage
 Azure file storage is a storage which you may use to share persistent information between different Virtual Machines. 
 
@@ -507,6 +511,7 @@ Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
 ## Info: 
 * Azure File Shares con be mounted by both: On-Premise and Cloud machines.
 * Access via SMB Protocol
+* Access via NFS Protocol
 * Can be mounted (attached) by any machines: on-premise and cloud machines.
 * Work on Windows, Mac and Linux.
 * Azure takes care of hardware and software updates + system patching
