@@ -538,7 +538,7 @@ Example of queue: incoming queue, outgoing queue, returned messages.
 </details>
 
 <details>
-<summary>Section 5: Tables Store. for NoSQL data</summary>
+<summary>Section 5: Tables Store. for NoSQL data (Excel like structure with 2 Primary columns)</summary>
 It's a "Key / attribute" storage with a schemaless design.  
 Something like between Redis (key-value) and Mongo (BSON). Or even Excel.
 
