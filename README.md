@@ -701,7 +701,7 @@ Lost of scenarios described in the official doc. Different database sources and 
 **Section 6 Exam Hints:**  
 Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
 
-# Section 7. Other Azure Core Services.
+# Section 7. Other Azure Core Services
 <details>
 <summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway). Application Delivery Services.</summary>
 
@@ -713,13 +713,32 @@ Networking is the next:
 3) Application Delivery Services - CDN, Load Balancer, Application Gateway.
 4) Network Monitoring Tools - **part of section 9**. Azure Monitor, Azure Service Health, Network Watcher.
 
-## vNet. vNet Peering.
+## vNet. vNet Peering:
 vNet - fundamental building block for your private network in Azure (private DC).  
 ![Azure vNet](images/6-other-core-services/1-networking/2-vNet.%20vNet%20peering.png)
 
-## Load Balancer.
+## Load Balancer:
 ![Azure LB](images/6-other-core-services/1-networking/3-loadbalancer.png)
 
+## VPN Gateway. Express Route:
+* You may use these two options to connect your on-premise network to a vNet in Azure Cloud.
+* Also, VPN Gateway may allow you to connect to your azure services from your laptop if you are in the airport or in any other public zone.
+* Express Route only to connect your On-Premise DC to Azure Cloud.
+
+![Azure VPN.Express Route](images/6-other-core-services/1-networking/4-VPN-Gateway.Express-Route.png)
+
+* Difference: Express Route - is a private dedicated tunnel.  **It is an AWS Direct Connect in AWS Cloud world.**
+To build it you have to ask your regional Azure DC to make this link.  
+
+## Azure Content Delivery Network (CDN):
+Delivers high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
+![Azure CDN](images/6-other-core-services/1-networking/5-CDN.png)
+
+## Azure Application Gateway:
+* Web Traffic - is a Load Balancer that allows you to manage traffic to your web application using rules.
+* Has Http\Https rules. For Example Content rules - some info will come from one VMs (pictures), another kind of inro will come from another bunch of VMs (videos).
+
+![Azure CDN](images/6-other-core-services/1-networking/6-application-gateway.png)
 
 </details>
 
