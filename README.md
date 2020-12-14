@@ -706,4 +706,186 @@ Lost of scenarios described in the official doc. Different database sources and 
 **Section 6 Exam Hints:**  
 Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
 
+# Section 7. Other Azure Core Services. Networking. IoT. BigData. AI and ML. Bot Service. DevOps in Azure. GithubActions in Azure.
+<details>
+<summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway, LoadBalancer, Application Gateway). Application Delivery Services(CDN).</summary>
 
+Networking is the next:
+![Azure networking](images/6-other-core-services/1-networking/1-networking.png)
+
+1) Connectivity services: vNet, ExpressRoute, VPN Gateway.
+2) Application Protection Services - **part of section 10**. Security Related Services: DDos protection, Firewall, NSGs (Network Security Groups), WAF (Web Application Firewall).
+3) Application Delivery Services - CDN, Load Balancer, Application Gateway.
+4) Network Monitoring Tools - **part of section 9**. Azure Monitor, Azure Service Health, Network Watcher.
+
+## vNet. vNet Peering:
+vNet - fundamental building block for your private network in Azure (private DC).  
+![Azure vNet](images/6-other-core-services/1-networking/2-vNet.%20vNet%20peering.png)
+
+## Load Balancer:
+![Azure LB](images/6-other-core-services/1-networking/3-loadbalancer.png)
+
+## VPN Gateway. Express Route (AWS Direct Connect):
+* You may use these two options to connect your on-premise network to a vNet in Azure Cloud.
+* Also, VPN Gateway may allow you to connect to your azure services from your laptop if you are in the airport or in any other public zone.
+* Express Route only to connect your On-Premise DC to Azure Cloud.
+
+![Azure VPN.Express Route](images/6-other-core-services/1-networking/4-VPN-Gateway.Express-Route.png)
+
+###Difference:
+* Express Route - is a private dedicated tunnel.  **It is an AWS Direct Connect in AWS Cloud world.**
+* VPN Gateway traffic goes through public networks.
+* To build ExpressRoute you have to ask your regional Azure DC to make this link.  
+
+## Azure Content Delivery Network (CDN):
+Delivers high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
+![Azure CDN](images/6-other-core-services/1-networking/5-CDN.png)
+
+## Azure Application Gateway:
+* Web Traffic - is a Load Balancer that allows you to manage traffic to your web application using rules.
+* Has Http\Https rules. For Example Content rules - some info will come from one VMs (pictures), another kind of inro will come from another bunch of VMs (videos).
+
+![Azure CDN](images/6-other-core-services/1-networking/6-application-gateway.png)
+
+</details>
+
+<details>
+<summary>Section 7: Azure ExpressRoute (Some info in prev block). ExpressRoute Premium. Like AWS Direct Connect</summary>
+
+[Section-7 Azure Express Route](pdf-files/section-7/7.3+Azure+ExpressRoute+Fundamentals+101.pdf)
+* Partner Edge on the pic - is a Microsoft Partner or another company who provides an ability to connect via their dedicated links to Microsoft Edge and Microsoft Resources.
+
+## Advantages
+* Layer 3 connectivity (IP-level in OSI network model)
+* BGP - Border Gateway (Routeway) Protocol.
+* HA support for all peering locations with primary and secondary connections.
+* SLA - service level agreements. Microsoft guarantees update connection.
+* You are able to get Private Global Connectivity with ALL regions if you choose **ExpressRoute Premium**  
+
+## Billing
+* Unlimited Data: Flat fee per month. Unlimited data.
+* Metered Data: Monthly fees. Inbound traffic is out of charge, outbound is charge per Gigabyte. (Cost varies from region to region)
+* Premium add-on (Premium Circuit): 1 or 2nd option of prev two + more routes allowed (private peering, from 800 up to 10000 routes) + global connectivity services.
+
+</details>
+
+<details>
+<summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas)</summary>
+
+**IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2.**.
+
+![Azure IoT](images/6-other-core-services/2-IoT/1-iot.png)
+* Smart houses, Smart phones, Smart trucks. Connected world I would say.
+
+![Azure IoT](images/6-other-core-services/2-IoT/2-iot-2.png)
+
+## Azure IoT Hub - managed Service, central message hub for bi-directional communication between your IoT apps and devices.
+
+![Azure IoT Hub](images/6-other-core-services/2-IoT/3-iot-hub.png)
+
+## Azure Central. Paas.
+![Azure IoT Central](images/6-other-core-services/2-IoT/4-iot-central.png)
+* To reduce the cost of developing, managing and maintaining enterprise-grade IoT solutions.
+* Cloud-hosted IoT solutions for your organization: IoT deviced connected to your cloud-based Application(s) and your Cloud-based Application.
+
+</details>
+
+<details>
+<summary>Section 7: Azure BigData. Azure SQL Data Warehouse (now known as Azure Synapse Analytics). PaaS.</summary>
+
+**As with all PaaS services from Microsoft, SQL Data Warehouse offers an availability SLA of 99.9%.
+ Microsoft can offer 99.9% availability because it has high availability features built into the platform**
+
+## Azure SQL Data Warehouse:
+![Azure SQL Warehouse](images/6-other-core-services/3-bigdata/1-azure-sql-warehouse.png)
+
+## Azure Databricks - Apache Spark-based analytics platform:
+![Azure DataBricks](images/6-other-core-services/3-bigdata/2-azure-databricks.png)
+* Works with SQL, with Azure Blob Storage, Azure Cosmos, Azure Data Lake.
+
+## Azure HDInsight - Cost-effective enterprise-grade service for open source analytics.
+**EXAM HINT: Think about it like about open-source database: MySQL or PostgresSQL.**
+* You can work with Apache Hadoop, Apache Spark, Apache Kafka.
+* Can be integrated with other services: **Data Factory**, **Data Lake Storage**.
+
+![Azure HDInsight](images/6-other-core-services/3-bigdata/3-azure-hd-insight.png)
+
+</details>
+
+<details>
+<summary>Section 7: Azure AI and ML .Machine Learning. Azure Machine Learning and Azure Machine Learning Studio (Classic). NOT AVAILABLE IN PORTAL. NAVIGATE TO ml.azure.com</summary>
+
+**NOT AVAILABLE IN PORTAL. NAVIGATE TO [ml.azure.com](ml.azure.com)**
+
+![Azure ML](images/6-other-core-services/4-ml,%20ai/1-ml.png)
+![Azure AI](images/6-other-core-services/4-ml,%20ai/2-ai.png)
+
+## Azure Machine Learning Studio (Classic)
+* Can use without writing code (in designer)
+
+![Azure MLS](images/6-other-core-services/4-ml,%20ai/3-ML-Studio.png)
+
+## Azure Machine Learning Studio (preview)
+![Azure MLS](images/6-other-core-services/4-ml,%20ai/4-ML-Studio-modern.png)
+* you can use designer or SDKs and CLI to prep data, write code, train and deploy machine learning models.
+* Adds scalability and enterprise security.
+
+</details>
+
+<details>
+<summary>Section 7: Azure Bot Service</summary>
+
+* Azure Bot Service is Microsoft AI chatbot offered as-a-service.
+* Monthly subscription.
+
+[Section-7 Azure Bot](pdf-files/section-7/7.7+Azure+Bot+Service+Fundamentals+101.pdf)
+
+</details>
+
+<details>
+<summary>Section 7: DevOps in Azure. Azure Boards, Azure Pipelines, Azure Test Plans, Azure Repos, Azure Artifacts, DevTest Labs</summary>
+
+![Azure DevOps](images/6-other-core-services/5-devops/1-devops.png)
+
+* Azure provides several services that provide a solution for creating step-by-step production and continuous improvement chain.
+
+![Azure DevOps](images/6-other-core-services/5-devops/2-azureboard,azurepipeline.png)
+![Azure DevOps](images/6-other-core-services/5-devops/3-Azure-repos.png)
+
+## DevTest Labs
+* Enables to manage VMs and PaaS resources without waiting for approvals.  
+
+![Azure DevOps](images/6-other-core-services/5-devops/4-Azure-Devtest-labs.png)
+
+* You can test the latest versions of apps and speed up the process of creating and terminating testing environments.
+
+</details>
+
+<details>
+<summary>Section 7: GitHub, GitHub Actions for Azure</summary>
+
+[Section-7 Azure GitHub Actions](pdf-files/section-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
+
+* GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repo.
+* With GitHub Actions you can build CI (Continuous Integration) and CD (Continuous Deployment) in your repository.
+
+</details>
+
+**Section 7 Exam Hints:**  
+* vNet - fundamental block of your "Private DC" in Azure.
+* vNet Peering - communicate between different vNets within same or different regions.
+* Azure LoadBalancer - public IP address to your resource. Also possible to make LoadBalancer as a private inbound point (between different Azure resources, VMs and DBs)
+* VPN Gateway - Encrypted Tunnel throughout public network (internet)
+* Express Route - like Aws Direct Connect. Private dedicated link from your on-premise DC to Azure.
+* Application Gateway - LoadBalancer + Https rules. (for example split your content by type between sources)
+* IoT Hub - central message hub for bi-directional communication between your IoT application and devices. 
+* IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2.
+* IoT Central - PaaS. IoT Application Platform that reduces burden and cost of developing, managing, maintaining IoT solutions.
+* Azure BigData - Azure SQL Data Warehouse. Azure DataBricks. Azure HDInsight.
+* Azure SQL Data Warehouse - cloud-based data warehouse. You can run high-performance analytics and massively parallel processing (MPP).
+* Azure Databricks - Apache Spark-based analytics platform.
+* Azure HDInsight - cost-effective enterprise-grade service, but only for open source analytics.
+* Azure ML Machine Learning and AI - Machine Learning Studio (classic) and Machine Learning Studio (also known as Machine learning Studio (preview)).
+* Azure Machine Learnine Studio (classic) provides designer, SDKs and CLI to quickly prep data, train and deploy machine learning models.
+* Azure Machine Learning is not 
+* Azure Bot - chatbot based on ML.
