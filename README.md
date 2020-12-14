@@ -849,4 +849,14 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
+<details>
+<summary>Section 7: GitHub, GitHub Actions for Azure</summary>
+
+[Section-7 Azure GitHub Actions](pdf-files/section-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
+
+* GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repo.
+* With GitHub Actions you can build CI (Continuous Integration) and CD (Continuous Deployment) in your repository.
+
+</details>
+
 
