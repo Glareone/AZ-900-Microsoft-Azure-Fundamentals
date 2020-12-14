@@ -820,4 +820,14 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
+<details>
+<summary>Section 7: Azure Bot Service</summary>
+
+* Azure Bot Service is Microsoft AI chatbot offered as-a-service.
+* Monthly subscription.
+
+[Section-7 Azure Bot](pdf-files/section-7/7.7+Azure+Bot+Service+Fundamentals+101.pdf)
+
+</details>
+
 
