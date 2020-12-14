@@ -767,6 +767,8 @@ Delivers high-bandwidth content to users by caching their content at strategical
 <details>
 <summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas)</summary>
 
+**IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2.**.
+
 ![Azure IoT](images/6-other-core-services/2-IoT/1-iot.png)
 * Smart houses, Smart phones, Smart trucks. Connected world I would say.
 
@@ -784,7 +786,10 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure BigData. Azure SQL Data Warehouse</summary>
+<summary>Section 7: Azure BigData. Azure SQL Data Warehouse (now known as Azure Synapse Analytics). PaaS.</summary>
+
+**As with all PaaS services from Microsoft, SQL Data Warehouse offers an availability SLA of 99.9%.
+ Microsoft can offer 99.9% availability because it has high availability features built into the platform**
 
 ## Azure SQL Data Warehouse:
 ![Azure SQL Warehouse](images/6-other-core-services/3-bigdata/1-azure-sql-warehouse.png)
@@ -803,7 +808,9 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure AI and ML. Azure Machine Learning and Azure Machine Learning Studio (Classic)</summary>
+<summary>Section 7: Azure AI and ML .Machine Learning. Azure Machine Learning and Azure Machine Learning Studio (Classic). NOT AVAILABLE IN PORTAL. NAVIGATE TO ml.azure.com</summary>
+
+**NOT AVAILABLE IN PORTAL. NAVIGATE TO [ml.azure.com](ml.azure.com)**
 
 ![Azure ML](images/6-other-core-services/4-ml,%20ai/1-ml.png)
 ![Azure AI](images/6-other-core-services/4-ml,%20ai/2-ai.png)
@@ -859,4 +866,21 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
-
+**Section 7 Exam Hints:**  
+* vNet - fundamental block of your "Private DC" in Azure.
+* vNet Peering - communicate between different vNets within same or different regions.
+* Azure LoadBalancer - public IP address to your resource. Also possible to make LoadBalancer as a private inbound point (between different Azure resources, VMs and DBs)
+* VPN Gateway - Encrypted Tunnel throughout public network (internet)
+* Express Route - like Aws Direct Connect. Private dedicated link from your on-premise DC to Azure.
+* Application Gateway - LoadBalancer + Https rules. (for example split your content by type between sources)
+* IoT Hub - central message hub for bi-directional communication between your IoT application and devices. 
+* IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2.
+* IoT Central - PaaS. IoT Application Platform that reduces burden and cost of developing, managing, maintaining IoT solutions.
+* Azure BigData - Azure SQL Data Warehouse. Azure DataBricks. Azure HDInsight.
+* Azure SQL Data Warehouse - cloud-based data warehouse. You can run high-performance analytics and massively parallel processing (MPP).
+* Azure Databricks - Apache Spark-based analytics platform.
+* Azure HDInsight - cost-effective enterprise-grade service, but only for open source analytics.
+* Azure ML Machine Learning and AI - Machine Learning Studio (classic) and Machine Learning Studio (also known as Machine learning Studio (preview)).
+* Azure Machine Learnine Studio (classic) provides designer, SDKs and CLI to quickly prep data, train and deploy machine learning models.
+* Azure Machine Learning is not 
+* Azure Bot - chatbot based on ML.
