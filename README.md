@@ -830,4 +830,23 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
+<details>
+<summary>Section 7: DevOps in Azure. Azure Boards, Azure Pipelines, Azure Test Plans, Azure Repos, Azure Artifacts, DevTest Labs</summary>
+
+![Azure DevOps](images/6-other-core-services/5-devops/1-devops.png)
+
+* Azure provides several services that provide a solution for creating step-by-step production and continuous improvement chain.
+
+![Azure DevOps](images/6-other-core-services/5-devops/2-azureboard,azurepipeline.png)
+![Azure DevOps](images/6-other-core-services/5-devops/3-Azure-repos.png)
+
+## DevTest Labs
+* Enables to manage VMs and PaaS resources without waiting for approvals.  
+
+![Azure DevOps](images/6-other-core-services/5-devops/4-Azure-Devtest-labs.png)
+
+* You can test the latest versions of apps and speed up the process of creating and terminating testing environments.
+
+</details>
+
 
