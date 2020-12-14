@@ -765,7 +765,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas).</summary>
+<summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas)</summary>
 
 ![Azure IoT](images/6-other-core-services/2-IoT/1-iot.png)
 * Smart houses, Smart phones, Smart trucks. Connected world I would say.
@@ -783,5 +783,23 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
+<details>
+<summary>Section 7: Azure BigData. Azure SQL Data Warehouse</summary>
+
+## Azure SQL Data Warehouse:
+![Azure SQL Warehouse](images/6-other-core-services/3-bigdata/1-azure-sql-warehouse.png)
+
+## Azure Databricks - Apache Spark-based analytics platform:
+![Azure DataBricks](images/6-other-core-services/3-bigdata/2-azure-databricks.png)
+* Works with SQL, with Azure Blob Storage, Azure Cosmos, Azure Data Lake.
+
+## Azure HDInsight - Cost-effective enterprise-grade service for open source analytics.
+**EXAM HINT: Think about it like about open-source database: MySQL or PostgresSQL.**
+* You can work with Apache Hadoop, Apache Spark, Apache Kafka.
+* Can be integrated with other services: **Data Factory**, **Data Lake Storage**.
+
+![Azure HDInsight](images/6-other-core-services/3-bigdata/3-azure-hd-insight.png)
+
+</details>
 
 
