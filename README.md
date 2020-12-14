@@ -701,4 +701,27 @@ Lost of scenarios described in the official doc. Different database sources and 
 **Section 6 Exam Hints:**  
 Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
 
+# Section 7. Other Azure Core Services.
+<details>
+<summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway). Application Delivery Services.</summary>
+
+Networking is the next:
+![Azure networking](images/6-other-core-services/1-networking/1-networking.png)
+
+1) Connectivity services: vNet, ExpressRoute, VPN Gateway.
+2) Application Protection Services - **part of section 10**. Security Related Services: DDos protection, Firewall, NSGs (Network Security Groups), WAF (Web Application Firewall).
+3) Application Delivery Services - CDN, Load Balancer, Application Gateway.
+4) Network Monitoring Tools - **part of section 9**. Azure Monitor, Azure Service Health, Network Watcher.
+
+## vNet. vNet Peering.
+vNet - fundamental building block for your private network in Azure (private DC).  
+![Azure vNet](images/6-other-core-services/1-networking/2-vNet.%20vNet%20peering.png)
+
+## Load Balancer.
+![Azure LB](images/6-other-core-services/1-networking/3-loadbalancer.png)
+
+
+</details>
+
+
 
