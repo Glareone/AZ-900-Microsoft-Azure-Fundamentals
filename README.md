@@ -703,7 +703,7 @@ Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&
 
 # Section 7. Other Azure Core Services
 <details>
-<summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway). Application Delivery Services.</summary>
+<summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway, LoadBalancer, Application Gateway). Application Delivery Services(CDN).</summary>
 
 Networking is the next:
 ![Azure networking](images/6-other-core-services/1-networking/1-networking.png)
@@ -720,15 +720,17 @@ vNet - fundamental building block for your private network in Azure (private DC)
 ## Load Balancer:
 ![Azure LB](images/6-other-core-services/1-networking/3-loadbalancer.png)
 
-## VPN Gateway. Express Route:
+## VPN Gateway. Express Route (AWS Direct Connect):
 * You may use these two options to connect your on-premise network to a vNet in Azure Cloud.
 * Also, VPN Gateway may allow you to connect to your azure services from your laptop if you are in the airport or in any other public zone.
 * Express Route only to connect your On-Premise DC to Azure Cloud.
 
 ![Azure VPN.Express Route](images/6-other-core-services/1-networking/4-VPN-Gateway.Express-Route.png)
 
-* Difference: Express Route - is a private dedicated tunnel.  **It is an AWS Direct Connect in AWS Cloud world.**
-To build it you have to ask your regional Azure DC to make this link.  
+###Difference:
+* Express Route - is a private dedicated tunnel.  **It is an AWS Direct Connect in AWS Cloud world.**
+* VPN Gateway traffic goes through public networks.
+* To build ExpressRoute you have to ask your regional Azure DC to make this link.  
 
 ## Azure Content Delivery Network (CDN):
 Delivers high-bandwidth content to users by caching their content at strategically placed physical nodes across the world.
@@ -739,6 +741,26 @@ Delivers high-bandwidth content to users by caching their content at strategical
 * Has Http\Https rules. For Example Content rules - some info will come from one VMs (pictures), another kind of inro will come from another bunch of VMs (videos).
 
 ![Azure CDN](images/6-other-core-services/1-networking/6-application-gateway.png)
+
+</details>
+
+<details>
+<summary>Section 7: Azure ExpressRoute (Some info in prev block). ExpressRoute Premium. Like AWS Direct Connect</summary>
+
+[Section-7 Azure Express Route](pdf-files/section-7/7.3+Azure+ExpressRoute+Fundamentals+101.pdf)
+* Partner Edge on the pic - is a Microsoft Partner or another company who provides an ability to connect via their dedicated links to Microsoft Edge and Microsoft Resources.
+
+## Advantages
+* Layer 3 connectivity (IP-level in OSI network model)
+* BGP - Border Gateway (Routeway) Protocol.
+* HA support for all peering locations with primary and secondary connections.
+* SLA - service level agreements. Microsoft guarantees update connection.
+* You are able to get Private Global Connectivity with ALL regions if you choose **ExpressRoute Premium**  
+
+## Billing
+* Unlimited Data: Flat fee per month. Unlimited data.
+* Metered Data: Monthly fees. Inbound traffic is out of charge, outbound is charge per Gigabyte. (Cost varies from region to region)
+* Premium add-on: 1 or 2nd option of prev two + more routes allowed + global connectivity services.
 
 </details>
 
