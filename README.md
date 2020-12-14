@@ -802,4 +802,22 @@ Delivers high-bandwidth content to users by caching their content at strategical
 
 </details>
 
+<details>
+<summary>Section 7: Azure AI and ML. Azure Machine Learning and Azure Machine Learning Studio (Classic)</summary>
+
+![Azure ML](images/6-other-core-services/4-ml,%20ai/1-ml.png)
+![Azure AI](images/6-other-core-services/4-ml,%20ai/2-ai.png)
+
+## Azure Machine Learning Studio (Classic)
+* Can use without writing code (in designer)
+
+![Azure MLS](images/6-other-core-services/4-ml,%20ai/3-ML-Studio.png)
+
+## Azure Machine Learning Studio (preview)
+![Azure MLS](images/6-other-core-services/4-ml,%20ai/4-ML-Studio-modern.png)
+* you can use designer or SDKs and CLI to prep data, write code, train and deploy machine learning models.
+* Adds scalability and enterprise security.
+
+</details>
+
 
