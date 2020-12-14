@@ -701,7 +701,7 @@ Lost of scenarios described in the official doc. Different database sources and 
 **Section 6 Exam Hints:**  
 Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
 
-# Section 7. Other Azure Core Services
+# Section 7. Other Azure Core Services. Networking. IoT. BigData. AI and ML. Bot Service. DevOps in Azure. GithubActions in Azure.
 <details>
 <summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway, LoadBalancer, Application Gateway). Application Delivery Services(CDN).</summary>
 
@@ -760,7 +760,26 @@ Delivers high-bandwidth content to users by caching their content at strategical
 ## Billing
 * Unlimited Data: Flat fee per month. Unlimited data.
 * Metered Data: Monthly fees. Inbound traffic is out of charge, outbound is charge per Gigabyte. (Cost varies from region to region)
-* Premium add-on: 1 or 2nd option of prev two + more routes allowed + global connectivity services.
+* Premium add-on (Premium Circuit): 1 or 2nd option of prev two + more routes allowed (private peering, from 800 up to 10000 routes) + global connectivity services.
+
+</details>
+
+<details>
+<summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas).</summary>
+
+![Azure IoT](images/6-other-core-services/2-IoT/1-iot.png)
+* Smart houses, Smart phones, Smart trucks. Connected world I would say.
+
+![Azure IoT](images/6-other-core-services/2-IoT/2-iot-2.png)
+
+## Azure IoT Hub - managed Service, central message hub for bi-directional communication between your IoT apps and devices.
+
+![Azure IoT Hub](images/6-other-core-services/2-IoT/3-iot-hub.png)
+
+## Azure Central. Paas.
+![Azure IoT Central](images/6-other-core-services/2-IoT/4-iot-central.png)
+* To reduce the cost of developing, managing and maintaining enterprise-grade IoT solutions.
+* Cloud-hosted IoT solutions for your organization: IoT deviced connected to your cloud-based Application(s) and your Cloud-based Application.
 
 </details>
 
