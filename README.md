@@ -884,3 +884,17 @@ Delivers high-bandwidth content to users by caching their content at strategical
 * Azure Machine Learnine Studio (classic) provides designer, SDKs and CLI to quickly prep data, train and deploy machine learning models.
 * Azure Machine Learning is not 
 * Azure Bot - chatbot based on ML.
+
+# Section 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
+
+<details>
+<summary>Section 8: Azure Resource Manager, Resource Groups, Tags.</summary>
+
+[Section-8 Azure Resource Manager](pdf-files/section-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
+[Section-8 Azure Groups](pdf-files/section-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
+[Section-8 Azure Tags](pdf-files/section-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+</details>
+
+<details>
+<summary>Section 8: Azure Locks, Azure Policies.</summary>
+</details>
