@@ -864,7 +864,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 <details>
 <summary>Module 7: GitHub, GitHub Actions for Azure</summary>
 
-[Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
+Link: [Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
 
 * GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repo.
 * With GitHub Actions you can build CI (Continuous Integration) and CD (Continuous Deployment) in your repository.
@@ -898,7 +898,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 Azure Resource manager - is a deployment and management service in Azure.  
 After being authorized it allows you to manage any of your resources in Azure (create,delete,update containers, storages, VMs and so on).  
 
-[Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
+Link: [Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
 
 ![Azure Resource Manager](images/8-azure-resource-manager/1-azure-resource-manager.png)
 ![Azure Resource Manager](images/8-azure-resource-manager/2-resources.png)
@@ -919,9 +919,9 @@ After being authorized it allows you to manage any of your resources in Azure (c
 <details>
 <summary>Module 8: Azure Resource Groups, Tags</summary>
 
-### Resource Groups and Microsoft Azure Naming Convention:
+### Resource Groups and Microsoft Azure Naming Convention.
 
-[Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
+Link: [Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
 
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/1-azure-resource-group.png)
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/2-Resource-Groups-Location.png)
@@ -929,7 +929,14 @@ After being authorized it allows you to manage any of your resources in Azure (c
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention.png)
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention-2.png)
 
-[Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+
+
+### Azure Tags.
+Link: [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+
+![Azure Tags](images/8-azure-resource-manager/Azure-Tags/1-azure-tag.png)
+![Azure Tags](images/8-azure-resource-manager/Azure-Tags/2-azure-tag-rules.png)
+
 </details>
 
 <details>
