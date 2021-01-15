@@ -914,7 +914,16 @@ After being authorized it allows you to manage any of your resources in Azure (c
 <details>
 <summary>Module 8: Azure Resource Groups, Tags</summary>
 
+### Resource Groups and Microsoft Azure Naming Convention:
+
 [Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
+
+![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/1-azure-resource-group.png)
+![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/2-Resource-Groups-Location.png)
+* How to name different resources:
+![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention.png)
+![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention-2.png)
+
 [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
 </details>
 
