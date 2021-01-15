@@ -7,10 +7,10 @@ Describe core Azure services (30-35%)
 Describe security, privacy, compliance, and trust (25-30%)  
 Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)  
 
-# Section: 2. Basis. Cloud Computing Models. Regions, AZ, Management Infrastructure
+# Module: 2. Basis. Cloud Computing Models. Regions, AZ, Management Infrastructure
 
 <details>
-<summary>Section 2: Cloud Deployment models. Private and Public clouds.</summary>
+<summary>Module 2: Cloud Deployment models. Private and Public clouds.</summary>
 
 ![basis](images/1-cloud-computing/1-cloud-computing.png)
 ![basis](images/1-cloud-computing/2-difference.png)
@@ -22,22 +22,22 @@ Describe Azure pricing Service Level Agreements, and Lifecycles (20-25%)
 </details>
 
 <details>
-<summary>Section 2: Cloud Computing Models. Regions, Availability Zones (AZ), Availability Sets. Azure Management Interfaces.</summary>
+<summary>Module 2: Cloud Computing Models. Regions, Availability Zones (AZ), Availability Sets. Azure Management Interfaces.</summary>
 
 ## Cloud Computing Models. IaaS (rent a car), PaaS (take a taxi), SaaS (use the bus).
-[Cloud Computing Models PDF](pdf-files/section-2/2.4+Cloud+Computing+Models.pdf)
+[Cloud Computing Models PDF](pdf-files/module-2/2.4+Cloud+Computing+Models.pdf)
 1. SaaS works on a subscription based model - pay annually or monthly.  
 
 * Cloud Advantages against other solutions:  
-[Advantages of Cloud Computing PDF](pdf-files/section-2/2.5+Advantages+of+Microsoft+Azure+Cloud+Computing.pdf)
+[Advantages of Cloud Computing PDF](pdf-files/module-2/2.5+Advantages+of+Microsoft+Azure+Cloud+Computing.pdf)
 
 ## Economies of Scale. CapEx (Capital Expenditure) vs OpEx (Operational Expenditure)
-[Economies](pdf-files/section-2/2.6+Understanding+CapEx+versus+OpEx.+Economies+of+Scale..pdf)
+[Economies](pdf-files/module-2/2.6+Understanding+CapEx+versus+OpEx.+Economies+of+Scale..pdf)
 * Upfront investments - buying taxis. And, after upfront investments, the value reduces over time.  
 * If you go on your own in your business - then you will pay more. You will pay less with Azure.  
 
 ## Regions, Availability Zones (AZ), Availability Sets
-[Regions and AZ PDF](pdf-files/section-2/2.7+Azure+Global+Infrastructure+-+Regions+and+Availability+Zones.pdf)
+[Regions and AZ PDF](pdf-files/module-2/2.7+Azure+Global+Infrastructure+-+Regions+and+Availability+Zones.pdf)
 [Some additional information via link PDF](https://heranonazure.wordpress.com/2019/02/12/azure-infrastructure-geographies-regions-zones-datacenters/)
 
 * Region us a part of one Geography + Specific service availability.  
@@ -65,7 +65,7 @@ Required for mission-critical applications.
 ![Azure China](images/1-cloud-computing/10-cloud-china.png)
 
 ## Azure Management Interfaces
-[Azure Management PDF](pdf-files/section-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)  
+[Azure Management PDF](pdf-files/module-2/2.8+Azure+Management+Interfaces+-+How+to+Interact+with+Azure+Cloud+Platform.pdf)  
 * Azure Portal
 
 * Azure CLI (Command Line Interface) - console for Windows\Mac\Linux
@@ -84,7 +84,7 @@ Monitoring the health and servers statuses, Run commands, diagnose and fix issue
 </details>
 
 <details>
-<summary>Section 2: Azure Subscriptions. Management Groups + Azure Resource Hierarchy.</summary>
+<summary>Module 2: Azure Subscriptions. Management Groups + Azure Resource Hierarchy.</summary>
 
 * In enterprise world there could be several kinds of subscriptions: Development subscription, testing subscription, production subscription
 
@@ -116,12 +116,12 @@ Azure Resource Hierarchy:
 
 </details>
 
-## Section 2 Exam Hints
-[exam hints PDF](pdf-files/section-2/2.9+Module+Completion+&+Exam+Hints.pdf)
+## Module 2 Exam Hints
+[exam hints PDF](pdf-files/module-2/2.9+Module+Completion+&+Exam+Hints.pdf)
 
-# Section 3. Azure Core Services. Virtual Machines. Azure Managed Disks. Application Security Group (ASG). Network Security Group (NSG).
+# Module 3. Azure Core Services. Virtual Machines. Azure Managed Disks. Application Security Group (ASG). Network Security Group (NSG).
 <details>
-<summary>Section 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
+<summary>Module 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
 
 ### Create Virtual Machine using Ubuntu canonical image:
 ![Create VM](images/3-virtual-machines/practise/1-create-vm.png)
@@ -150,7 +150,7 @@ Azure Resource Hierarchy:
 5. NSG configuration
 
 ## Virtual Machines. (Availability sets described above)
-[Virtual Machines PDF](pdf-files/section-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
+[Virtual Machines PDF](pdf-files/module-3/3.4+Introduction+to+Azure+Virtual+Machines.pdf)
 * Azure Virtual Machines represent **IaaS** Computing Model.  
 The most flexible option.
 Types:
@@ -164,7 +164,7 @@ Types:
 [More information about sizes link](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
 
 ## Virtual Machines Networking, VMs High Availability. Vnet.
-[Virtual Networking, VM, High Availability. PDF](pdf-files/section-3/3.5+Azure+VMs+Networking+and+High+Availability+Fundamentals+101.pdf)
+[Virtual Networking, VM, High Availability. PDF](pdf-files/module-3/3.5+Azure+VMs+Networking+and+High+Availability+Fundamentals+101.pdf)
 * vNET - Azure Virtual Networks. Enable to communicate between VMs and over the internet with you on-prem machines.
 * vNET - is equivalent of **VPC** in AWS Cloud.
 * Allow you using SSH to connect to your Virtual Machines throw Public IP address inside your vNET.
@@ -199,7 +199,7 @@ Managed disks are like a physical disk in an on-premises server but, virtualized
  
 #### Network Security Groups (NSGs)
 NSG’s control access by permitting or denying network traffic in a number of ways, whether it be
-[Network and Security Groups](pdf-files/section-3/3.10+Azure+Network+and+Application+Security+Groups+Fundamentals+101.pdf)
+[Network and Security Groups](pdf-files/module-3/3.10+Azure+Network+and+Application+Security+Groups+Fundamentals+101.pdf)
 * Azure Network Security Groups act as a firewall for your VMs. Controls inbound and outbound traffic
 * Works on subnet level or Network Interface Card (NIC)
 * Different VMs can have different NSGs applied
@@ -222,12 +222,12 @@ ASGs are used within a NSG to apply a network security rule to a specific worklo
 
 </details>
 
-# Section 3. Load Balancer
+# Module 3. Load Balancer
 <details>
-<summary>Section 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
+<summary>Module 3: Practical lessons. Launch VMs, NSG, ASG, Load Balancer</summary>
 
 ## Azure Load Balancer Fundamentals
-[Load Balancer](pdf-files/section-3/3.12+Azure+Load+Balancer+Fundamentals+101.pdf)
+[Load Balancer](pdf-files/module-3/3.12+Azure+Load+Balancer+Fundamentals+101.pdf)
 Let you equally distributing load to a group of servers (backend servers pool)
 ![Load Balancer](images/3-virtual-machines/7-load-balancer.png)
 
@@ -250,7 +250,7 @@ Let you equally distributing load to a group of servers (backend servers pool)
 3) Connect to your Webservers via SSH, update them, install Apache and so on.
 
 **Azure Traffic Manager is DNS-based traffic load balancer**
-[Azure Traffic Manager - DNS LOAD BALANCER](pdf-files/section-3/3.15+Azure+Traffic+Manager+Basics+101.pdf)
+[Azure Traffic Manager - DNS LOAD BALANCER](pdf-files/module-3/3.15+Azure+Traffic+Manager+Basics+101.pdf)
 
 * Works with Hybrid cloud deployment  - On + Premise + Azure Cloud. It can monitor your resources availability.
 * Able to work between different regions.
@@ -260,10 +260,10 @@ Let you equally distributing load to a group of servers (backend servers pool)
 </details>
 
 <details>
-<summary>Section 3: Exam Hints</summary>
+<summary>Module 3: Exam Hints</summary>
 
-**Section 3 Exam Hints:**  
-[Exam Hints](pdf-files/section-3/3.16+Module+Completion+&+Exam+Hints.pdf)
+**Module 3 Exam Hints:**  
+[Exam Hints](pdf-files/module-3/3.16+Module+Completion+&+Exam+Hints.pdf)
 * SLA - Service Level Agreement
 * DC - Data Center
 * VMSS - Virtual Machine Scale Sets - work only with Load Balancer
@@ -275,15 +275,15 @@ In other words - your network security rules destination is a dedicated group of
 * Load Balancer could be internal Load Balancer - Within Azure Cloud, between your servers and SQL DBs.
 </details>
 
-# Section 4. Azure Compute Options. Virtual Machines vs Docker Containers. App Service.
+# Module 4. Azure Compute Options. Virtual Machines vs Docker Containers. App Service.
 <details>
-<summary>Section 4: Azure Compute Options</summary>
+<summary>Module 4: Azure Compute Options</summary>
 
 Azure Compute Options, Introduction:  
-[Azure Compute Options](pdf-files/section-4/4.2+Azure+Compute+Options+Introduction.pdf)  
+[Azure Compute Options](pdf-files/module-4/4.2+Azure+Compute+Options+Introduction.pdf)  
 
 Azure Containers Materials:  
-[Azure Containers 101](pdf-files/section-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
+[Azure Containers 101](pdf-files/module-4/4.3+Azure+Containers+Fundamentals+101.pdf)  
 
 VM:
 1) VMs need infrastructure (server in Data Center)
@@ -318,7 +318,7 @@ YOUR_SELECTED_CATALOG - is not required in simple cases.
 3) To reach your container you have to copy FQDN (Fully Qualified Domain Name) and pass it into your browser URL.
 
 <details>
-<summary>Section 4: App Service (PaaS) - host WebApp, RestAPI, Mobile BE.</summary>
+<summary>Module 4: App Service (PaaS) - host WebApp, RestAPI, Mobile BE.</summary>
 
 App service is PaaS.  
 Pricing is based on a selected Plan. 3 Plan options (1 of them is free and shared).  
@@ -330,11 +330,11 @@ Usage:
 3) You can get access to App Service and use it using Azure Cloud Shell (terminal right on the Azure Portal). Or using App Service menu.
 
 Course Doc:
-[Azure App Service](pdf-files/section-4/4.5+Azure+App+Service+Fundamentals+101.pdf)  
+[Azure App Service](pdf-files/module-4/4.5+Azure+App+Service+Fundamentals+101.pdf)  
 </details>
 
 <details>
-<summary>Section 4: Serverless: Azure Functions. Azure Logic Apps.</summary>
+<summary>Module 4: Serverless: Azure Functions. Azure Logic Apps.</summary>
 
 * HA - High Availability.
 Serverless ideas:
@@ -356,17 +356,17 @@ Real example:
 Using the Logic App designer on the portal -> select RSS -> RSS Trigger on feeds.reuters.com/reuters/topNews -> then send an email on selected email.
 
 Course Doc:
-[Azure App Service](pdf-files/section-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
+[Azure App Service](pdf-files/module-4/4.7+Azure+Serverless+Computing+Fundamentals+101.pdf)  
 
 </details>
 
 <details>
-<summary>Section 4: Azure Event Grid.</summary>
+<summary>Module 4: Azure Event Grid.</summary>
 
 Allows you to build applications with event-based architectures.
 
 Course Doc:
-[Azure Event Grid](pdf-files/section-4/4.10+Azure+Event+Grid.pdf)  
+[Azure Event Grid](pdf-files/module-4/4.10+Azure+Event+Grid.pdf)  
 
 Example: 
 You subscribed to Azure Resource to know its status. For example - status of your VM.
@@ -379,8 +379,8 @@ You can work with any Azure Portal events or define your own events.
 
 </details>
 
-**Section 4 Exam Hints:**  
-Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&+Exam+Hints.pdf)  
+**Module 4 Exam Hints:**  
+Link to PDF: [Module-4 Exam Hints](pdf-files/module-4/4.10+Module+Completion+&+Exam+Hints.pdf)  
 1) Azure Compute Options is an on-demand computing service.
 2) 4 Options: VMs, Containers (Run with ACI or AKS), Azure App Service, ServerLess (Functions & Logic Apps)
 3) ACI - Azure Container Instances. <b>Is PaaS</b>.
@@ -388,9 +388,9 @@ Link to PDF: [Section-4 Exam Hints](pdf-files/section-4/4.10+Module+Completion+&
 5) Serverless - is abstraction of servers. <b>Is PaaS</b>. You shouldn't worry how it runs in the cloud. High Availability. Event-Driven.
 6) Logic Apps - your integration between business processes as a series of steps. (Example: Check RSS -> Get update -> Was Updated? Send an email. Everything in several clicks).
 
-# Section 5. Azure Storage. Blob Storage. File Storage. Table Storage. Queue Storage.
+# Module 5. Azure Storage. Blob Storage. File Storage. Table Storage. Queue Storage.
 ## Azure Storage Fundamentals.
-Link to PDF: [Section-5 Azure Storage Fundamentals](pdf-files/section-5/5.2+Introduction+to+Azure+Storage.pdf)  
+Link to PDF: [Module-5 Azure Storage Fundamentals](pdf-files/module-5/5.2+Introduction+to+Azure+Storage.pdf)  
 * 4 Types:
 1) Azure Blob Storage - BLOB is Binary Large Objects. It is a scalable object store.
 Good for unstructured data (text or binary data).
@@ -404,9 +404,9 @@ Suitable for:
 4) Azure Tables - NoSQL structured data
 
 <details>
-<summary>Section 5: Blob Storage. Azure Data Lake Storage Gen2</summary>
+<summary>Module 5: Blob Storage. Azure Data Lake Storage Gen2</summary>
 
-Link to PDF: [Section-5 Azure Blob Storage](pdf-files/section-5/5.3+Azure+Blob+Storage+Fundamentals+101.pdf)  
+Link to PDF: [Module-5 Azure Blob Storage](pdf-files/module-5/5.3+Azure+Blob+Storage+Fundamentals+101.pdf)  
 
 BLOB is Binary Large Objects. It is a scalable object store.
 Good for unstructured data (text or binary data, but there is no hard restrictions).
@@ -461,10 +461,10 @@ Preview Replica Types:
 </details>
  
 <details>
-<summary>Section 5: Azure Managed Disks Fundamentals 101 (Virtual Hard Drive For 1 VM) / Azure Files Storage (Disks to share info between VMs)</summary>
+<summary>Module 5: Azure Managed Disks Fundamentals 101 (Virtual Hard Drive For 1 VM) / Azure Files Storage (Disks to share info between VMs)</summary>
 
 # Azure Managed Disks
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
+Link to PDF: [Module-5 Azure Managed Disks](pdf-files/module-5/5.6+Azure+Managed+Disks+Fundamentals+101.pdf)  
 
 
 ## Suitable For:
@@ -499,7 +499,7 @@ Share files between Virtual Machines.
 # Azure File Storage
 Azure file storage is a storage which you may use to share persistent information between different Virtual Machines. 
 
-Link to PDF: [Section-5 Azure File Storage](pdf-files/section-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure File Storage](pdf-files/module-5/5.11+Azure+Files+Storage+Fundamentals+101.pdf)
 
 ## Structure:
 Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
@@ -516,9 +516,9 @@ Storage Account -> Azure Files -> files for Windows VM01 and Windows VM02.
 </details>
  
 <details>
-<summary>Section 5: Queue Storage</summary>
+<summary>Module 5: Queue Storage</summary>
 
-Link to PDF: [Section-5 Azure Queue Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure Queue Disks](pdf-files/module-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
 
 ## Suitable For:
 * For storing large number of messages, accessible from anywhere.  
@@ -533,11 +533,11 @@ Example of queue: incoming queue, outgoing queue, returned messages.
 </details>
 
 <details>
-<summary>Section 5: Tables Store. for NoSQL data</summary>
+<summary>Module 5: Tables Store. for NoSQL data</summary>
 It's a "Key / attribute" storage with a schemaless design.  
 Something like between Redis (key-value) and Mongo (BSON). Or even Excel.
 
-Link to PDF: [Section-5 Azure Managed Disks](pdf-files/section-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure Managed Disks](pdf-files/module-5/5.13+Azure+Queues+Storage+Fundamentals+101.pdf)
 
 ## Suitable For:
 For storing structured NoSQL data, non-relational.
@@ -558,14 +558,14 @@ Storage Account -> Table
 
 </details>
 
-**Section 5 Exam Hints:**  
-Link to PDF: [Section-5 Exam Hints](pdf-files/section-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
+**Module 5 Exam Hints:**  
+Link to PDF: [Module-5 Exam Hints](pdf-files/module-5/5.15+Module+Completion+&+Exam+Hints.pdf)  
 
-# Section 6. Databases in Azure
+# Module 6. Databases in Azure
 <details>
-<summary>Section 6: Cosmos Database. Document Database</summary>
+<summary>Module 6: Cosmos Database. Document Database</summary>
 
-Link to PDF: [Section-5 Azure CosmosDB](pdf-files/section-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure CosmosDB](pdf-files/module-6/6.2+Azure+Cosmos+Database+Fundamentals+101.pdf)
 * Multi-model database service.
 * It's a document DB. Format is JSON.
 * Schema-agnostic, but generally classified as NoSQL database
@@ -599,9 +599,9 @@ Items in a container are divided into distinct subsets called logical partitions
 </details>
 
 <details>
-<summary>Section 6: SQL Database. Managed Service (like PaaS).</summary>
+<summary>Module 6: SQL Database. Managed Service (like PaaS).</summary>
 
-Link to PDF: [Section-5 Azure Database Fundamentals](pdf-files/section-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure Database Fundamentals](pdf-files/module-6/6.4+Azure+SQL+Database+Fundamentals+101.pdf)
 * general-purpose relational Database-as-a-service (DBaaS).
 * Managed Service (like PaaS)
 
@@ -624,10 +624,10 @@ Tip:
 </details>
 
 <details>
-<summary>Section 6:  MySQL. PostgreSQL</summary>
+<summary>Module 6:  MySQL. PostgreSQL</summary>
 
-Link to PDF: [Section-6 MySQL](pdf-files/section-6/6.6+Azure+Database+for+MySQL+Basics+101.pdf)
-Link to PDF: [Section-6 PostgreSQL](pdf-files/section-6/6.8+Azure+Database+for+PostgreSQL+Basics+101.pdf)
+Link to PDF: [Module-6 MySQL](pdf-files/module-6/6.6+Azure+Database+for+MySQL+Basics+101.pdf)
+Link to PDF: [Module-6 PostgreSQL](pdf-files/module-6/6.8+Azure+Database+for+PostgreSQL+Basics+101.pdf)
 
 ## MySQL
 * HA
@@ -644,12 +644,12 @@ It goes as a part of server group with coordinator node and worker node roles.
 </details>
 
 <details>
-<summary>Section 6: Azure SQL Managed Instance ("AZURE SQL"). PaaS. Expensive! Fully managed instance-as-a-service with 100% features of SQL Server Database</summary>
+<summary>Module 6: Azure SQL Managed Instance ("AZURE SQL"). PaaS. Expensive! Fully managed instance-as-a-service with 100% features of SQL Server Database</summary>
 
 **EXPENSIVE CHOICE: minimum is 640eur per month for 4-vCore and 32GB of Storage**
 **Deploying up to 6 hours**
 
-Link to PDF: [Section-6 Azure SQL Managed Instance](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
+Link to PDF: [Module-6 Azure SQL Managed Instance](pdf-files/module-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
 * Fully managed isolated instance-as-a-service with 100% features of SQL Server Database.
 * Best option for most migrations to Azure Cloud (let you shift your on-premise customers to the cloud).  
 You literally can take your application as it is without modifying it and running it afterwards in the cloud.
@@ -684,10 +684,10 @@ You literally can take your application as it is without modifying it and runnin
 </details>
 
 <details>
-<summary>Section 6: Azure Database Migration Service. Seamless migrations from multiple database sources to Azure Cloud</summary>
+<summary>Module 6: Azure Database Migration Service. Seamless migrations from multiple database sources to Azure Cloud</summary>
 
 * Migration Service is a service designed to enable seamless migrations from multiple database sources to Azure Cloud.
-Link to PDF: [Section-5 Azure Database Migration](pdf-files/section-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
+Link to PDF: [Module-5 Azure Database Migration](pdf-files/module-6/6.10+Azure+SQL+Managed+Instance+Fundamentals+101.pdf)
 
 ## Supported Databases for different scenarios:
 Lost of scenarios described in the official doc. Different database sources and different available database destinations (in Azure of course).
@@ -698,20 +698,20 @@ Lost of scenarios described in the official doc. Different database sources and 
 
 </details>
 
-**Section 6 Exam Hints:**  
-Link to PDF: [Section-6 Exam Hints](pdf-files/section-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
+**Module 6 Exam Hints:**  
+Link to PDF: [Module-6 Exam Hints](pdf-files/module-6/6.11+Module+Completion+&+Exam+Hints.pdf)  
 
-# Section 7. Other Azure Core Services. Networking. IoT. BigData. AI and ML. Bot Service. DevOps in Azure. GithubActions in Azure.
+# Module 7. Other Azure Core Services. Networking. IoT. BigData. AI and ML. Bot Service. DevOps in Azure. GithubActions in Azure.
 <details>
-<summary>Section 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway, LoadBalancer, Application Gateway). Application Delivery Services(CDN).</summary>
+<summary>Module 7: Networking in Azure Cloud. Connectivity services (vNet, ExpressRoute, VPN Gateway, LoadBalancer, Application Gateway). Application Delivery Services(CDN).</summary>
 
 Networking is the next:
 ![Azure networking](images/6-other-core-services/1-networking/1-networking.png)
 
 1) Connectivity services: vNet, ExpressRoute, VPN Gateway.
-2) Application Protection Services - **part of section 10**. Security Related Services: DDos protection, Firewall, NSGs (Network Security Groups), WAF (Web Application Firewall).
+2) Application Protection Services - **part of Module 10**. Security Related Services: DDos protection, Firewall, NSGs (Network Security Groups), WAF (Web Application Firewall).
 3) Application Delivery Services - CDN, Load Balancer, Application Gateway.
-4) Network Monitoring Tools - **part of section 9**. Azure Monitor, Azure Service Health, Network Watcher.
+4) Network Monitoring Tools - **part of Module 9**. Azure Monitor, Azure Service Health, Network Watcher.
 
 ## vNet. vNet Peering:
 vNet - fundamental building block for your private network in Azure (private DC).  
@@ -745,9 +745,9 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure ExpressRoute (Some info in prev block). ExpressRoute Premium. Like AWS Direct Connect</summary>
+<summary>Module 7: Azure ExpressRoute (Some info in prev block). ExpressRoute Premium. Like AWS Direct Connect</summary>
 
-[Section-7 Azure Express Route](pdf-files/section-7/7.3+Azure+ExpressRoute+Fundamentals+101.pdf)
+[Module-7 Azure Express Route](pdf-files/module-7/7.3+Azure+ExpressRoute+Fundamentals+101.pdf)
 * Partner Edge on the pic - is a Microsoft Partner or another company who provides an ability to connect via their dedicated links to Microsoft Edge and Microsoft Resources.
 
 ## Advantages
@@ -765,7 +765,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure IoT. IoT Hub. IoT Central (Paas)</summary>
+<summary>Module 7: Azure IoT. IoT Hub. IoT Central (Paas)</summary>
 
 **IoT Hub can route messages to Azure Blob Storage and Azure Data Lake Storage Gen2.**.
 
@@ -786,7 +786,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure BigData. Azure SQL Data Warehouse (now known as Azure Synapse Analytics). PaaS.</summary>
+<summary>Module 7: Azure BigData. Azure SQL Data Warehouse (now known as Azure Synapse Analytics). PaaS.</summary>
 
 **As with all PaaS services from Microsoft, SQL Data Warehouse offers an availability SLA of 99.9%.
  Microsoft can offer 99.9% availability because it has high availability features built into the platform**
@@ -808,7 +808,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure AI and ML .Machine Learning. Azure Machine Learning and Azure Machine Learning Studio (Classic). NOT AVAILABLE IN PORTAL. NAVIGATE TO ml.azure.com</summary>
+<summary>Module 7: Azure AI and ML .Machine Learning. Azure Machine Learning and Azure Machine Learning Studio (Classic). NOT AVAILABLE IN PORTAL. NAVIGATE TO ml.azure.com</summary>
 
 **NOT AVAILABLE IN PORTAL. NAVIGATE TO [ml.azure.com](ml.azure.com)**
 
@@ -828,17 +828,17 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: Azure Bot Service</summary>
+<summary>Module 7: Azure Bot Service</summary>
 
 * Azure Bot Service is Microsoft AI chatbot offered as-a-service.
 * Monthly subscription.
 
-[Section-7 Azure Bot](pdf-files/section-7/7.7+Azure+Bot+Service+Fundamentals+101.pdf)
+[Module-7 Azure Bot](pdf-files/module-7/7.7+Azure+Bot+Service+Fundamentals+101.pdf)
 
 </details>
 
 <details>
-<summary>Section 7: DevOps in Azure. Azure Boards, Azure Pipelines, Azure Test Plans, Azure Repos, Azure Artifacts, DevTest Labs</summary>
+<summary>Module 7: DevOps in Azure. Azure Boards, Azure Pipelines, Azure Test Plans, Azure Repos, Azure Artifacts, DevTest Labs</summary>
 
 ![Azure DevOps](images/6-other-core-services/5-devops/1-devops.png)
 
@@ -857,16 +857,16 @@ Delivers high-bandwidth content to users by caching their content at strategical
 </details>
 
 <details>
-<summary>Section 7: GitHub, GitHub Actions for Azure</summary>
+<summary>Module 7: GitHub, GitHub Actions for Azure</summary>
 
-[Section-7 Azure GitHub Actions](pdf-files/section-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
+[Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
 
 * GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repo.
 * With GitHub Actions you can build CI (Continuous Integration) and CD (Continuous Deployment) in your repository.
 
 </details>
 
-**Section 7 Exam Hints:**  
+**Module 7 Exam Hints:**  
 * vNet - fundamental block of your "Private DC" in Azure.
 * vNet Peering - communicate between different vNets within same or different regions.
 * Azure LoadBalancer - public IP address to your resource. Also possible to make LoadBalancer as a private inbound point (between different Azure resources, VMs and DBs)
@@ -881,20 +881,20 @@ Delivers high-bandwidth content to users by caching their content at strategical
 * Azure Databricks - Apache Spark-based analytics platform.
 * Azure HDInsight - cost-effective enterprise-grade service, but only for open source analytics.
 * Azure ML Machine Learning and AI - Machine Learning Studio (classic) and Machine Learning Studio (also known as Machine learning Studio (preview)).
-* Azure Machine Learnine Studio (classic) provides designer, SDKs and CLI to quickly prep data, train and deploy machine learning models.
+* Azure Machine Learning Studio (classic) provides designer, SDKs and CLI to quickly prep data, train and deploy machine learning models.
 * Azure Machine Learning is not 
 * Azure Bot - chatbot based on ML.
 
-# Section 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
+# Module 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
 
 <details>
-<summary>Section 8: Azure Resource Manager, Resource Groups, Tags.</summary>
+<summary>Module 8: Azure Resource Manager, Resource Groups, Tags.</summary>
 
-[Section-8 Azure Resource Manager](pdf-files/section-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
-[Section-8 Azure Groups](pdf-files/section-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
-[Section-8 Azure Tags](pdf-files/section-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+[Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
+[Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
+[Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
 </details>
 
 <details>
-<summary>Section 8: Azure Locks, Azure Policies.</summary>
+<summary>Module 8: Azure Locks, Azure Policies.</summary>
 </details>
