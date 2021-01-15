@@ -888,9 +888,32 @@ Delivers high-bandwidth content to users by caching their content at strategical
 # Module 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
 
 <details>
-<summary>Module 8: Azure Resource Manager, Resource Groups, Tags.</summary>
+<summary>Module 8: Azure Resource Manager</summary>
+
+Azure Resource manager - is a deployment and management service in Azure.  
+After being authorized it allows you to manage any of your resources in Azure (create,delete,update containers, storages, VMs and so on).  
 
 [Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
+
+![Azure Resource Manager](images/8-azure-resource-manager/1-azure-resource-manager.png)
+![Azure Resource Manager](images/8-azure-resource-manager/2-resources.png)
+![Azure Resource Manager](images/8-azure-resource-manager/3-AzureResourceManager-benefits.png)
+
+* You can manage resources on any of management levels:  
+![Azure Resource Manager](images/8-azure-resource-manager/4-management-levels.png)
+* Infrastructure As Code (For Azure Resource Manager):
+![Azure Resource Manager](images/8-azure-resource-manager/5-Infrastructure-as-code.png)
+* Azure Resource Manager Analogues in AWS and GoogleCloud:  
+![Azure Resource Manager](images/8-azure-resource-manager/6-Infrastructure-as-code-analogues.png)
+
+* Azure Resource Manager Templates:  
+![Azure Resource Manager](images/8-azure-resource-manager/7-ARM-templates.png)
+![Azure Resource Manager](images/8-azure-resource-manager/8-example-of-template.png)
+</details>
+
+<details>
+<summary>Module 8: Azure Resource Groups, Tags</summary>
+
 [Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
 [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
 </details>
