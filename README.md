@@ -864,7 +864,7 @@ Delivers high-bandwidth content to users by caching their content at strategical
 <details>
 <summary>Module 7: GitHub, GitHub Actions for Azure</summary>
 
-[Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
+Link: [Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+Actions+for+Azure+Fundamentals+101.pdf)
 
 * GitHub Actions enables you to create custom software development life cycle (SDLC) workflows directly in your GitHub repo.
 * With GitHub Actions you can build CI (Continuous Integration) and CD (Continuous Deployment) in your repository.
@@ -893,12 +893,12 @@ Delivers high-bandwidth content to users by caching their content at strategical
 # Module 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
 
 <details>
-<summary>Module 8: Azure Resource Manager</summary>
+<summary>Module 8: Azure Resource Manager (Like AWS Cloud Formation)</summary>
 
 Azure Resource manager - is a deployment and management service in Azure.  
 After being authorized it allows you to manage any of your resources in Azure (create,delete,update containers, storages, VMs and so on).  
 
-[Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
+Link: [Module-8 Azure Resource Manager](pdf-files/module-8/azure-resource-manager/8.2+Introduction+to+Azure+Resource+Manager+and+ARM+Templates.pdf)
 
 ![Azure Resource Manager](images/8-azure-resource-manager/1-azure-resource-manager.png)
 ![Azure Resource Manager](images/8-azure-resource-manager/2-resources.png)
@@ -919,9 +919,9 @@ After being authorized it allows you to manage any of your resources in Azure (c
 <details>
 <summary>Module 8: Azure Resource Groups, Tags</summary>
 
-### Resource Groups and Microsoft Azure Naming Convention:
+### Resource Groups and Microsoft Azure Naming Convention.
 
-[Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
+Link: [Module-8 Azure Groups](pdf-files/module-8/azure-resource-manager/8.3+Resource+Groups+Fundamentals+101.pdf)
 
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/1-azure-resource-group.png)
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/2-Resource-Groups-Location.png)
@@ -929,9 +929,70 @@ After being authorized it allows you to manage any of your resources in Azure (c
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention.png)
 ![Azure Resource Groups](images/8-azure-resource-manager/Azure-Resource-Group/3-naming-convention-2.png)
 
-[Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+
+
+### Azure Tags.
+Link: [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+Tags+Fundamentals+101.pdf)
+
+![Azure Tags](images/8-azure-resource-manager/Azure-Tags/1-azure-tag.png)
+![Azure Tags](images/8-azure-resource-manager/Azure-Tags/2-azure-tag-rules.png)
+
 </details>
 
 <details>
-<summary>Module 8: Azure Locks, Azure Policies.</summary>
+<summary>Module 8: Azure Policies.</summary>
+
+### Policies
+Link: [Module-8 Azure Policies](pdf-files/module-8/8.6+Azure+Policy+Fundamentals+101.pdf)
+
+Policies allow you to create rules or restrictions for any actions. For example - to let you create only B1s tier Virtual Machines.  
+So we create the policy and then you have conditions, like when to enforce the specific policy and the effect, the action, what to enforce.  
+
+![Azure Policies](images/8-azure-resource-manager/Azure-Policies/1-apply-policies.png)
+
+So if you apply it for example in the middle resource group then the SQL database and also the load balancer will have to comply with the policy definition.
+
+#### Built-in policies:
+* There are also some built in Azure policies available, by default covering most common scenarios.  
+
+* So for example, Allowed locations - new resources, as I said, to be deployed only in specific locations,
+allowed virtual machines SKUs, so only specific VM SKUs to be used, but you can also enforce tag and its value
+and we have talked about tags in a previous lecture.
+
+* So enforcing a required tag, but also its value to a specific resource.  
+
+#### Initiative:
+* So what if you need to apply multiple policies at once ? So initiative definitions simplify managing and
+assigning policy definitions, by grouping a set of policies as one single item.  
+![Azure Policies](images/8-azure-resource-manager/Azure-Policies/2-initiative.png)
+
+* So in the Azure portal, you can just create a single policy or use an existing one and edit it in order
+to create a new one, or you can create an initiative.  
+
+So that is grouping a set of policies and using that as a single one item.  
+
+#### Assignments:
+It's the bind between resource (or resource group or something else) and initiative or policy.
+
+</details>
+
+<details>
+<summary>Module 8: Azure Locks.</summary>
+
+Azure Locks prevent users in your organization from accidentally deleting or modifying critical resources.  
+And currently there are two options available.  
+
+* So first option is Delete.
+
+And with this option you can read and modify a resource, but you can't delete it, while with the second one,
+read only, you can read a resource, but you can't modify or delete that specific resource.
+
+![Azure Locks](images/8-azure-resource-manager/Azure-Locks/1.png)
+
+** Read-only lock also prevents VM from being started or stopped.**
+
+**Can be applied on one of tree levels: Resource, Resource Group, Subscription**
+![Azure Locks](images/8-azure-resource-manager/Azure-Locks/2-apply-lock.png)
+
+
 </details>
