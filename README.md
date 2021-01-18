@@ -998,3 +998,27 @@ read only, you can read a resource, but you can't modify or delete that specific
 
 
 </details>
+
+# Module 9. Monitoring and Compliance.
+
+<details>
+<summary>Module 9: Azure BluePrints</summary>
+
+![Azure Blueprint](images/9-monitoring-and-compliance/1-blueprints.png)
+With Azure blueprints you deploy and update cloud environments in a repeatable manner.
+
+### Difference from Azure Resource Manager (ARM).
+After deployment process finished there is no more connections between ARM and Resources.
+Blueprint has such connections.
+
+* Now what's the advantage with blueprints?
+Well there are a couple of advantages, so not only one.  
+With blueprints, the relationship between the blueprint definition,
+so what should be deployed, and the blueprint assignment, what was deployed, is preserved.
+* So this is great for tracking and auditing the deployment.  
+You really have the deployment ready, but afterwards you can track and audit your infrastructure because
+you have this continuous relationship between the blueprint and the resource deployed.
+
+**With Azure Blueprints you are able to update several subscriptions at once. With ARM, you are not able to do that.**
+
+</details>
