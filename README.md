@@ -893,7 +893,7 @@ Link: [Module-7 Azure GitHub Actions](pdf-files/module-7/7.9+GitHub+and+GitHub+A
 # Module 8. Azure Resource Manager (ARM), Resource Groups, Tags. Azure Locks, Azure Policies.
 
 <details>
-<summary>Module 8: Azure Resource Manager</summary>
+<summary>Module 8: Azure Resource Manager (Like AWS Cloud Formation)</summary>
 
 Azure Resource manager - is a deployment and management service in Azure.  
 After being authorized it allows you to manage any of your resources in Azure (create,delete,update containers, storages, VMs and so on).  
@@ -941,4 +941,37 @@ Link: [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+
 
 <details>
 <summary>Module 8: Azure Locks, Azure Policies.</summary>
+
+### Policies
+Link: [Module-8 Azure Policies](pdf-files/module-8/8.6+Azure+Policy+Fundamentals+101.pdf)
+
+Policies allow you to create rules or restrictions for any actions. For example - to let you create only B1s tier Virtual Machines.  
+So we create the policy and then you have conditions, like when to enforce the specific policy and the effect, the action, what to enforce.  
+
+![Azure Policies](images/8-azure-resource-manager/Azure-Policies/1-apply-policies.png)
+
+So if you apply it for example in the middle resource group then the SQL database and also the load balancer will have to comply with the policy definition.
+
+#### Built-in policies:
+* There are also some built in Azure policies available, by default covering most common scenarios.  
+
+* So for example, Allowed locations - new resources, as I said, to be deployed only in specific locations,
+allowed virtual machines SKUs, so only specific VM SKUs to be used, but you can also enforce tag and its value
+and we have talked about tags in a previous lecture.
+
+* So enforcing a required tag, but also its value to a specific resource.  
+
+#### Initiative:
+* So what if you need to apply multiple policies at once ? So initiative definitions simplify managing and
+assigning policy definitions, by grouping a set of policies as one single item.  
+![Azure Policies](images/8-azure-resource-manager/Azure-Policies/2-initiative.png)
+
+* So in the Azure portal, you can just create a single policy or use an existing one and edit it in order
+to create a new one or you can create an initiative.  
+
+So that is grouping a set of policies and using that as a single one item.  
+
+#### Assignments:
+It's the bind between resource (or resource group or something else) and initiative or policy.
+
 </details>
