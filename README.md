@@ -1019,6 +1019,23 @@ so what should be deployed, and the blueprint assignment, what was deployed, is 
 You really have the deployment ready, but afterwards you can track and audit your infrastructure because
 you have this continuous relationship between the blueprint and the resource deployed.
 
-**With Azure Blueprints you are able to update several subscriptions at once. With ARM, you are not able to do that.**
+**With Azure Blueprints you are able to update several subscriptions at once. With ARM, you are not able to do that.**  
+
+**Azure Blueprint are able to operate "Azure Resource Manager Templates", "Resource Groups", "Policies", "Roles"**  
+For example you may apply policy related to required tag on every resource.
+</details>
+
+<details>
+<summary>Module 9: Azure Advisor</summary>
+
+Azure Advisor helps you follow best practices and optimize your Azure deployments.
+
+* cost effectiveness - optimize and reduce your overall azure spending.
+* performance - improve the speed of your application
+* high availability - ensure and improve to continuity your critical business apps.
+* security of your Azure resources - detect threats.
+* operational excelence - archive process and workflow efficiency, resource manageability and deployment best practices.
+
+#### Also we can think of it as your private consultant in Azure cloud.
 
 </details>
