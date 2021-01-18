@@ -989,7 +989,9 @@ read only, you can read a resource, but you can't modify or delete that specific
 
 ![Azure Locks](images/8-azure-resource-manager/Azure-Locks/1.png)
 
-**Can be applied on one of tree levels**
+** Read-only lock also prevents VM from being started or stopped.**
+
+**Can be applied on one of tree levels: Resource, Resource Group, Subscription**
 ![Azure Locks](images/8-azure-resource-manager/Azure-Locks/2-apply-lock.png)
 
 
