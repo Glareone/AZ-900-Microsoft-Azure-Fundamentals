@@ -979,6 +979,8 @@ It's the bind between resource (or resource group or something else) and initiat
 <details>
 <summary>Module 8: Azure Locks.</summary>
 
+**Similar to the Policies. Applied to the upper scope, all resources within the scope will inherit all attached locks**
+
 Azure Locks prevent users in your organization from accidentally deleting or modifying critical resources.  
 And currently there are two options available.  
 
