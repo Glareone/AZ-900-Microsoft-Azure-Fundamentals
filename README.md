@@ -940,7 +940,7 @@ Link: [Module-8 Azure Tags](pdf-files/module-8/azure-resource-manager/8.4+Azure+
 </details>
 
 <details>
-<summary>Module 8: Azure Locks, Azure Policies.</summary>
+<summary>Module 8: Azure Policies.</summary>
 
 ### Policies
 Link: [Module-8 Azure Policies](pdf-files/module-8/8.6+Azure+Policy+Fundamentals+101.pdf)
@@ -967,11 +967,30 @@ assigning policy definitions, by grouping a set of policies as one single item.
 ![Azure Policies](images/8-azure-resource-manager/Azure-Policies/2-initiative.png)
 
 * So in the Azure portal, you can just create a single policy or use an existing one and edit it in order
-to create a new one or you can create an initiative.  
+to create a new one, or you can create an initiative.  
 
 So that is grouping a set of policies and using that as a single one item.  
 
 #### Assignments:
 It's the bind between resource (or resource group or something else) and initiative or policy.
+
+</details>
+
+<details>
+<summary>Module 8: Azure Locks.</summary>
+
+Azure Locks prevent users in your organization from accidentally deleting or modifying critical resources.  
+And currently there are two options available.  
+
+* So first option is Delete.
+
+And with this option you can read and modify a resource, but you can't delete it, while with the second one,
+read only, you can read a resource, but you can't modify or delete that specific resource.
+
+![Azure Locks](images/8-azure-resource-manager/Azure-Locks/1.png)
+
+**Can be applied on one of tree levels**
+![Azure Locks](images/8-azure-resource-manager/Azure-Locks/2-apply-lock.png)
+
 
 </details>
