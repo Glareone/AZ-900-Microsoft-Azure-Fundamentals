@@ -1039,3 +1039,35 @@ Azure Advisor helps you follow best practices and optimize your Azure deployment
 #### Also we can think of it as your private consultant in Azure cloud.
 
 </details>
+
+<details>
+<summary>Module 9: Azure Monitor, Azure Service Health</summary>
+
+# Azure Monitor
+Azure Monitor collects, analyses and acts on telemetry from your cloud.  
+
+Azure Monitor will monitor your cloud environment and then perform different functions such as analysis,
+alerting and streaming to external systems.  
+
+#### Use cases for Azure Monitor.  
+* You can create smart alerts and automated actions, 
+* You can monitor resources and drill into monitoring data with Azure Log Analytics.
+* You can detect and diagnose issues across applications and dependencies with Application Insights.
+* Create visualizations with Azure dashboards.
+
+# Azure Service Health.
+## It combines 3 smaller services inside Azure Status, Azure Service Health and Azure Resource Health.
+* You can combine these three type of health resources to notify you about any of availability changes in Azure.  
+* Provides you comprehensive view on the situation in Azure.  
+
+### Azure Status
+* Azure Status informs you of service outages in Azure (WHEN SOMETHING WRONG WITH **AZURE** SERVICES OR **AZURE** REGIONS). 
+
+### Azure Service Health
+* Azure Service Health provides a personalized view of the health of the Azure services and regions you're using.
+* Azure Service Health alerts to be notified of any service issues, plan maintenance or even changes in Azure.
+
+### Azure Resource Health
+* Azure Resource Health, which provides information about the health of your individual, this time, cloud resources.  
+
+</details>
