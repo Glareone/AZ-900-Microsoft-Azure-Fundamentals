@@ -1078,3 +1078,113 @@ alerting and streaming to external systems.
 * Azure Resource Health, which provides information about the health of your individual, this time, cloud resources.  
 
 </details>
+
+
+# Module 10. Security in Azure Cloud.
+# Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
+
+<details>
+<summary>Module 11: Azure Pricing. Cloud Pricing. Azure VMs Pricing.</summary>
+
+# Azure Cloud Pricing
+* Azure resources are always charged based on usage.
+
+* Primary factors that affect the total monthly cost:
+
+![Azure Pricing](images/11-pricing-costs/1-factors.png)
+1) Usage cost can vary between locations.
+2) Data is going into Azure is free, data is going out of Azure is charged.
+
+# Azure VMs Pricing
+![Azure Pricing](images/11-pricing-costs/2-vm-pricing.png)
+* "pay as you go", so you pay for compute capacity, by the second, with no long term commitment
+* "pay upfront for resrved instances".
+To reduce price: **Reserved VM Instances**  
+You purchase in advance a VM, for a 1 year or 3 year period, in a specified region,  
+And because of this, well paying upfront will get you up to 72% savings, as opposed to pay as you go pricing.  
+* "spot pricing" - this option is not always available.
+
+</details>
+
+<details>
+<summary>Module 11: Azure Total Cost Ownership Calculator (TCO). (Predict your saving if you migrate workloads to Azure)</summary>
+
+Calculator: [TCO Calculator link](https://azure.microsoft.com/en-us/pricing/tco/calculator/)  
+Link: [Module-8 Azure Policies](pdf-files/module-11/11.3+Azure+TCO+Calculator.pdf)  
+
+So in order to predict and analyze your spending in Azure for new or existing services,
+**Pricing Calculator** and **Cost Management Advisor** are tools that can help.
+
+But if you are in the process or intend to migrate workloads to Microsoft Azure then you can use the **Total Cost of Ownership Calculator** in order to predict your cost savings.
+
+</details>
+
+<details>
+<summary>Module 11: Azure Cost Management. Azure Advisor (recommendations to reduce cost)</summary>
+
+# Azure Advisor (refer to Cost Recommendations)
+![Azure Advisor Cost](images/11-pricing-costs/3-advisor-cost-recommendations.png)
+* ExpressRoute is a private link between Azure DCs and your on-premise DC.
+
+# Azure Cost Management & Billing
+![Azure Cost Management](images/11-pricing-costs/4-azure-cost-management.png)
+
+# Tips how to reduce monthly cost:
+1) Use Visual studio subscription. You have 50\150$ credit for testing purposes in Azure.
+2) Use spending limits.
+3) Use Reserved Instances for VMs with upfront payment on 1 or 3 years.
+4) Use Low Cost Locations and Regions
+5) Resize Underutilized VMs. Oversized VMs might ask you to pay much more.
+6) Run VMs only when it needed. Schedule Automatic Shutdown.
+7) Delete Unused VMs.
+8) Change Cloud deployment model. Migrate to PaaS from IaaS (when applicable). It's cheaper.
+9) Linux vs Windows VMs. Linux is cheaper because of license cost.
+9.1) You can reuse Windows Server License. Microsoft provides the right to use this license in Azure as well.
+9.2) Reuse SQL Server Licenses.
+10) Use Dev\Test subscription options. Non-production env use.
+11) Use SQL Server Developer Edition for non-production needs.
+12) Use dedicated VM types for Database. (with low vCPU). cost reduction on compute.  
+Example: DS, ES, GS, MS families of Virtual Machines.
+
+
+</details>
+
+<details>
+<summary>Module 11: Azure Support Plans (Basic -> Developer -> Standard -> Professional Direct)</summary>
+
+Link: [Azure Support Plans](https://azure.microsoft.com/en-us/support/plans/)
+Standard is free, others have charge.
+
+</details>
+
+<details>
+<summary>Module 11: SLA (Service Level Agreements, % of availability). Composite SLA</summary>
+
+SLA is formal documents that describe performance standards or commitments that apply to Azure.
+
+Link: [Azure SLA](https://azure.microsoft.com/en-us/support/legal/sla/)  
+![Azure SLA](images/11-pricing-costs/5-SLA.png)
+
+Example: If you run two VMs in different regions and uptime of them is lower than 95% - you have 100% Service Credit, which means that this service is for free for you in this month.  
+Simply put, the service credit represents the discount applied to the Azure bill.  
+
+![Azure SLA](images/11-pricing-costs/6-sla-2.png)
+SLA Composition:  
+![Azure SLA](images/11-pricing-costs/7-sla-composite.png)
+</details>
+
+<details>
+<summary>Module 11: Service Lifecycle (use preview services)</summary>
+
+To see preview services:
+1) Portal -> Marketplace -> preview in a search bar
+2) Or visit [preview.portal.azure.com](preview.portal.azure.com)
+
+Microsoft offers previews of different Azure services, features and functionalities, and this is for evaluation purposes.  
+Users can test the new products or services before the official release and provide feedback to Microsoft that will help improving the Azure service.  
+* Private preview mode for new service - available to some or certain Azure customers
+* Public preview mode - available for all Azure customers
+
+**Some of the previews are not covered by customer support**
+
+</details>
