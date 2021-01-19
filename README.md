@@ -1084,7 +1084,7 @@ alerting and streaming to external systems.
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
 <details>
-<summary>Module 11: Azure Pricing</summary>
+<summary>Module 11: Azure Pricing. Cloud Pricing. Azure VMs Pricing.</summary>
 
 # Azure Cloud Pricing
 * Azure resources are always charged based on usage.
@@ -1116,5 +1116,17 @@ So in order to predict and analyze your spending in Azure for new or existing se
 **Pricing Calculator** and **Cost Management Advisor** are tools that can help.
 
 But if you are in the process or intend to migrate workloads to Microsoft Azure then you can use the **Total Cost of Ownership Calculator** in order to predict your cost savings.
+
+</details>
+
+<details>
+<summary>Module 11: Azure Cost Management. Azure Advisor (recommendations to reduce cost)</summary>
+
+# Azure Advisor (refer to Cost Recommendations)
+![Azure Advisor Cost](images/11-pricing-costs/3-advisor-cost-recommendations.png)
+* ExpressRoute is a private link between Azure DCs and your on-premise DC.
+
+# Azure Cost Management & Billing
+![Azure Cost Management](images/11-pricing-costs/4-azure-cost-management.png)
 
 </details>
