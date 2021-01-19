@@ -1000,6 +1000,13 @@ read only, you can read a resource, but you can't modify or delete that specific
 </details>
 
 # Module 9. Monitoring and Compliance.
+## Compliance Offering Examples:
+* GDPR - General Data Protection Regulation - only for Europe
+* HIPAA - Health Insurance Portability and Accountability Act
+* ISO - International Organization for Standartization
+* IEC - International Electrotechnical Commission 27018
+* NIST CSF - National Institute of Standards and Tech Cybercecurity Framework
+* Azure Government - public cloud for state agencies in USA.
 
 <details>
 <summary>Module 9: Azure BluePrints</summary>
