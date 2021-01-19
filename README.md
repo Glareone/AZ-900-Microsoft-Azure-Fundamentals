@@ -1091,12 +1091,12 @@ alerting and streaming to external systems.
 
 * Primary factors that affect the total monthly cost:
 
-![Azure Pricing](images/10-pricing-costs/1-factors.png)
+![Azure Pricing](images/11-pricing-costs/1-factors.png)
 1) Usage cost can vary between locations.
 2) Data is going into Azure is free, data is going out of Azure is charged.
 
 # Azure VMs Pricing
-![Azure Pricing](images/10-pricing-costs/2-vm-pricing.png)
+![Azure Pricing](images/11-pricing-costs/2-vm-pricing.png)
 * "pay as you go", so you pay for compute capacity, by the second, with no long term commitment
 * "pay upfront for resrved instances".
 To reduce price: **Reserved VM Instances**  
@@ -1107,7 +1107,14 @@ And because of this, well paying upfront will get you up to 72% savings, as oppo
 </details>
 
 <details>
-<summary>Module 11: Azure Total Cost Ownership Calculator (TCO)</summary>
+<summary>Module 11: Azure Total Cost Ownership Calculator (TCO). (Predict your saving if you migrate workloads to Azure)</summary>
 
+Calculator: [TCO Calculator link](https://azure.microsoft.com/en-us/pricing/tco/calculator/)  
+Link: [Module-8 Azure Policies](pdf-files/module-11/11.3+Azure+TCO+Calculator.pdf)  
+
+So in order to predict and analyze your spending in Azure for new or existing services,
+**Pricing Calculator** and **Cost Management Advisor** are tools that can help.
+
+But if you are in the process or intend to migrate workloads to Microsoft Azure then you can use the **Total Cost of Ownership Calculator** in order to predict your cost savings.
 
 </details>
