@@ -1078,3 +1078,36 @@ alerting and streaming to external systems.
 * Azure Resource Health, which provides information about the health of your individual, this time, cloud resources.  
 
 </details>
+
+
+# Module 10. Security in Azure Cloud.
+# Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
+
+<details>
+<summary>Module 11: Azure Pricing</summary>
+
+# Azure Cloud Pricing
+* Azure resources are always charged based on usage.
+
+* Primary factors that affect the total monthly cost:
+
+![Azure Pricing](images/10-pricing-costs/1-factors.png)
+1) Usage cost can vary between locations.
+2) Data is going into Azure is free, data is going out of Azure is charged.
+
+# Azure VMs Pricing
+![Azure Pricing](images/10-pricing-costs/2-vm-pricing.png)
+* "pay as you go", so you pay for compute capacity, by the second, with no long term commitment
+* "pay upfront for resrved instances".
+To reduce price: **Reserved VM Instances**  
+You purchase in advance a VM, for a 1 year or 3 year period, in a specified region,  
+And because of this, well paying upfront will get you up to 72% savings, as opposed to pay as you go pricing.  
+* "spot pricing" - this option is not always available.
+
+</details>
+
+<details>
+<summary>Module 11: Azure Total Cost Ownership Calculator (TCO)</summary>
+
+
+</details>
