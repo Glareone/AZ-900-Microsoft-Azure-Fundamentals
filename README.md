@@ -1129,4 +1129,47 @@ But if you are in the process or intend to migrate workloads to Microsoft Azure 
 # Azure Cost Management & Billing
 ![Azure Cost Management](images/11-pricing-costs/4-azure-cost-management.png)
 
+# Tips how to reduce monthly cost:
+1) Use Visual studio subscription. You have 50\150$ credit for testing purposes in Azure.
+2) Use spending limits.
+3) Use Reserved Instances for VMs with upfront payment on 1 or 3 years.
+4) Use Low Cost Locations and Regions
+5) Resize Underutilized VMs. Oversized VMs might ask you to pay much more.
+6) Run VMs only when it needed. Schedule Automatic Shutdown.
+7) Delete Unused VMs.
+8) Change Cloud deployment model. Migrate to PaaS from IaaS (when applicable). It's cheaper.
+9) Linux vs Windows VMs. Linux is cheaper because of license cost.
+9.1) You can reuse Windows Server License. Microsoft provides the right to use this license in Azure as well.
+9.2) Reuse SQL Server Licenses.
+10) Use Dev\Test subscription options. Non-production env use.
+11) Use SQL Server Developer Edition for non-production needs.
+12) Use dedicated VM types for Database. (with low vCPU). cost reduction on compute.  
+Example: DS, ES, GS, MS families of Virtual Machines.
+
+
 </details>
+
+<details>
+<summary>Module 11: Azure Support Plans (Basic -> Developer -> Standard -> Professional Direct)</summary>
+
+Link: [Azure Support Plans](https://azure.microsoft.com/en-us/support/plans/)
+Standard is free, others have charge.
+
+</details>
+
+<details>
+<summary>Module 11: SLA (Service Level Agreements, % of availability). Composite SLA</summary>
+
+SLA is formal documents that describe performance standards or commitments that apply to Azure.
+
+Link: [Azure SLA](https://azure.microsoft.com/en-us/support/legal/sla/)  
+![Azure SLA](images/11-pricing-costs/5-SLA.png)
+
+Example: If you run two VMs in different regions and uptime of them is lower than 95% - you have 100% Service Credit, which means that this service is for free for you in this month.  
+Simply put, the service credit represents the discount applied to the Azure bill.  
+
+![Azure SLA](images/11-pricing-costs/6-sla-2.png)
+SLA Composition:  
+![Azure SLA](images/11-pricing-costs/7-sla-composite.png)
+</details>
+
