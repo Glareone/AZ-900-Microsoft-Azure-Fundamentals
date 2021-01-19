@@ -979,6 +979,8 @@ It's the bind between resource (or resource group or something else) and initiat
 <details>
 <summary>Module 8: Azure Locks.</summary>
 
+**Similar to the Policies. Applied to the upper scope, all resources within the scope will inherit all attached locks**
+
 Azure Locks prevent users in your organization from accidentally deleting or modifying critical resources.  
 And currently there are two options available.  
 
@@ -994,5 +996,85 @@ read only, you can read a resource, but you can't modify or delete that specific
 **Can be applied on one of tree levels: Resource, Resource Group, Subscription**
 ![Azure Locks](images/8-azure-resource-manager/Azure-Locks/2-apply-lock.png)
 
+
+</details>
+
+# Module 9. Monitoring and Compliance.
+## Compliance Offering Examples:
+* GDPR - General Data Protection Regulation - only for Europe
+* HIPAA - Health Insurance Portability and Accountability Act
+* ISO - International Organization for Standartization
+* IEC - International Electrotechnical Commission 27018
+* NIST CSF - National Institute of Standards and Tech Cybercecurity Framework
+* Azure Government - public cloud for state agencies in USA.
+
+<details>
+<summary>Module 9: Azure BluePrints</summary>
+
+![Azure Blueprint](images/9-monitoring-and-compliance/1-blueprints.png)
+With Azure blueprints you deploy and update cloud environments in a repeatable manner.
+
+### Difference from Azure Resource Manager (ARM).
+After deployment process finished there is no more connections between ARM and Resources.
+Blueprint has such connections.
+
+* Now what's the advantage with blueprints?
+Well there are a couple of advantages, so not only one.  
+With blueprints, the relationship between the blueprint definition,
+so what should be deployed, and the blueprint assignment, what was deployed, is preserved.
+* So this is great for tracking and auditing the deployment.  
+You really have the deployment ready, but afterwards you can track and audit your infrastructure because
+you have this continuous relationship between the blueprint and the resource deployed.
+
+**With Azure Blueprints you are able to update several subscriptions at once. With ARM, you are not able to do that.**  
+
+**Azure Blueprint are able to operate "Azure Resource Manager Templates", "Resource Groups", "Policies", "Roles"**  
+For example you may apply policy related to required tag on every resource.
+</details>
+
+<details>
+<summary>Module 9: Azure Advisor</summary>
+
+Azure Advisor helps you follow best practices and optimize your Azure deployments.
+
+* cost effectiveness - optimize and reduce your overall azure spending.
+* performance - improve the speed of your application
+* high availability - ensure and improve to continuity your critical business apps.
+* security of your Azure resources - detect threats.
+* operational excelence - archive process and workflow efficiency, resource manageability and deployment best practices.
+
+#### Also we can think of it as your private consultant in Azure cloud.
+
+</details>
+
+<details>
+<summary>Module 9: Azure Monitor, Azure Service Health</summary>
+
+# Azure Monitor
+Azure Monitor collects, analyses and acts on telemetry from your cloud.  
+
+Azure Monitor will monitor your cloud environment and then perform different functions such as analysis,
+alerting and streaming to external systems.  
+
+#### Use cases for Azure Monitor.  
+* You can create smart alerts and automated actions, 
+* You can monitor resources and drill into monitoring data with Azure Log Analytics.
+* You can detect and diagnose issues across applications and dependencies with Application Insights.
+* Create visualizations with Azure dashboards.
+
+# Azure Service Health.
+## It combines 3 smaller services inside Azure Status, Azure Service Health and Azure Resource Health.
+* You can combine these three type of health resources to notify you about any of availability changes in Azure.  
+* Provides you comprehensive view on the situation in Azure.  
+
+### Azure Status
+* Azure Status informs you of service outages in Azure (WHEN SOMETHING WRONG WITH **AZURE** SERVICES OR **AZURE** REGIONS). 
+
+### Azure Service Health
+* Azure Service Health provides a personalized view of the health of the Azure services and regions you're using.
+* Azure Service Health alerts to be notified of any service issues, plan maintenance or even changes in Azure.
+
+### Azure Resource Health
+* Azure Resource Health, which provides information about the health of your individual, this time, cloud resources.  
 
 </details>
