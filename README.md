@@ -1173,3 +1173,18 @@ SLA Composition:
 ![Azure SLA](images/11-pricing-costs/7-sla-composite.png)
 </details>
 
+<details>
+<summary>Module 11: Service Lifecycle (use preview services)</summary>
+
+To see preview services:
+1) Portal -> Marketplace -> preview in a search bar
+2) Or visit [preview.portal.azure.com](preview.portal.azure.com)
+
+Microsoft offers previews of different Azure services, features and functionalities, and this is for evaluation purposes.  
+Users can test the new products or services before the official release and provide feedback to Microsoft that will help improving the Azure service.  
+* Private preview mode for new service - available to some or certain Azure customers
+* Public preview mode - available for all Azure customers
+
+**Some of the previews are not covered by customer support**
+
+</details>
