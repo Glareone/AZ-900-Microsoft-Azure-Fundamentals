@@ -1162,7 +1162,7 @@ Standard, you get continuous monitoring, threat detection and all the capabiliti
 </details>
 
 <details>
-<summary>Module 10: Azure Identity Services. Azure Active Directory (AAD). Azure Privileged Identity Manager (PIM)</summary>
+<summary>Module 10: Azure Identity Services. Azure Active Directory (AAD). Azure Privileged Identity Manager (PIM). MFA (Milti-factor Auth)</summary>
 
 ![Azure authentication](images/10-security/4-authentication-authorization.png)
 
@@ -1198,7 +1198,36 @@ So not all your users need the same permissions in order to perform their job. S
 
 4) Get notifications is self-explanatory thing.
 
+## MFA. Multi-factor authentication
+![Azure MFA](images/10-security/8-mfa.png)
+![Azure MFA](images/10-security/9-mfa2.png)
+
 </details>
+
+<details>
+<summary>Module 10: Conditional Access. Single Sign-On (SSO). Application Proxy</summary>
+
+## Conditional Access
+![Azure Conditional Access](images/10-security/10-Conditional-access.png)
+![Azure Conditional Access](images/10-security/11-Conditional-access-2.png)
+
+## SSO. Application Proxy (for on-premise apps)
+SSO allows users to log in once and have access to various applications without having to go through the same identity verification process each time.  
+This great capability is free and integrated with any Azure ad subscription.
+
+* Example: Let's cover one popular example with SSO where applications are really popular these days and these are offered as a service.
+You can think of Microsoft 365 Salesforce.  
+So you sign up for the service and you can start using it right away.  
+You only need to authenticate first.  
+Once you authenticate, single sign on makes it possible for the users to navigate between the various
+web applications again without having to sign in multiple times.  
+One thing to note is that single sign on can be implemented for both cloud and on premises applications.  
+
+* SSO Works with hybrib clouds as well.
+![Azure App Proxy](images/10-security/12-sso.png)
+
+</details>
+
 
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
