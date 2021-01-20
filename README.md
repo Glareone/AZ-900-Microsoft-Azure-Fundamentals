@@ -1319,7 +1319,20 @@ So this is the hardware side and the region where it is deployed.
 </details>
 
 <details>
-<summary>Module 10: Azure Encryption, Key Vault (Name-Pass storage)</summary>
+<summary>Module 10: Azure Encryption(Azure Storage Service Encryption, Azure Transparent Data Encryption), Key Vault (Name-Pass storage)</summary>
+
+# Encryption
+![Azure Encryption](images/10-security/29-encryption.png)
+
+# Encryption at Rest, in Transit
+* Azure Transparent Data Encryption - for SQL
+* Azure Storage Service Encryption
+![Azure Encryption](images/10-security/30-encryption-rest-transit.png)
+![Azure Encryption](images/10-security/31-SSE-TDE.png)
+
+# Azure Key Vault
+![Azure Key Vault](images/10-security/32-Azure-Key-Vault.png)
+
 </details>
 
 <details>
