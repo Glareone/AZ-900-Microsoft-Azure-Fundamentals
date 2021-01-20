@@ -1081,6 +1081,86 @@ alerting and streaming to external systems.
 
 
 # Module 10. Security in Azure Cloud.
+
+<details>
+<summary>Module 10: Cloud Shared Responsibility.</summary>
+
+Link: [Module-10 Azure Cloud Shared Responsibility](pdf-files/module-10/10.2+Azure+Cloud+Shared+Responsibility+Model.pdf)  
+
+When you hear cloud share responsibility model, you really must think security.
+It's about the responsibilities and how you manage security in your cloud or hybrid environment.
+
+In general,
+Well responsibility is shared between the cloud provider and the client or customer.  
+The responsibility level depends on the type of applications run in the cloud, but also on the cloud deployment model.
+![Azure Shared Responsibility](images/10-security/1-shared-responsibility.png)
+
+# Security. Defence.
+Think of it like about onion, in the middle - sensitive data, layers - security layers.  
+## Physical security.
+The first layer of defense is physical security and that is really the cloud provider's responsibility.  
+Data center security with cameras, restricted access, trained personnel and so on
+
+## Identity. Access-based security. (SSO, MFA)
+You can think of this step as implementing SSO, so Single Sign-On and MFA (Multi-factor authentication).
+
+## Network security protection (Ddos-protection, firewall)
+So DDoS protection, Distributed Denial of Service protection and firewall security should be taken into consideration, at this step.
+
+## Restrict or limit network connectivity
+1) You should deny inbound internet access. NSG Configuration.   
+
+2) Limit the connectivity between resources.
+You should limit connectivity between resources in the same vNET, but also between virtual networks.
+**Example if your VM or service is compromised inside Azure cloud, you don't want for the hacker to be able to jump from the compromised resource to another one.**
+
+3) Security to your own premises data center should be taken into consideration.
+So if you're running in a hybrid cloud environment and you also have your traditional data center connected to Azure cloud,
+well some security should be implemented for the connection between the data center and Azure cloud.
+
+4) Security for compute
+Consist of patching your VMs, implement endpoint protection. **Endpoint Protection is similar to how you install, for example, an antivirus on your laptop or workstation.**  
+**Implement secure access to VMs.**
+
+5) Security for application
+Implement security in app dev lifecycle. So actually this means that you should integrate security while building the application and not enforcing
+security after the application has been built and developed.
+
+6) Data Security
+So security of the data itself.  
+So this is customer's responsibility.
+* Data stored in Databases
+* VM disks
+* Cloud storages
+
+</details>
+
+<details>
+<summary>Module 10: Azure Security Center.</summary>
+
+Link: [Azure Sec Center Link](https://azure.microsoft.com/en-us/services/security-center/?&ef_id=CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&OCID=AID2100643_SEM_CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&dclid=CLym9bbsqu4CFelAkQUdAwoGFg#security)
+
+![Azure Security Center](images/10-security/2-Security-center.png)
+1) Strengthen security posture means that Azure Security Center identifies security issues and implements best practices across your machines,
+2) Protect against threats. Azure Security Center evaluates workloads and raises threat prevention recommendations and security **alerts**.
+3) While get secure faster means that the security is really implemented at cloud speed.
+
+## Azure Security Center Options. Free and Standard
+1) Free tier  
+   1.1) Well this tier is limited to assessments and recommendations  
+   1.2) And you also get an overall **Azure secure score.**
+   
+2) Standard tier
+Standard, you get continuous monitoring, threat detection and all the capabilities Azure Security Center supports.
+
+![Azure Security Center](images/10-security/3-security-center-options.png)
+
+## TIPS
+1) Region depended prices. 
+2) Hour and Monthly costs is available.
+
+</details>
+
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
 <details>
