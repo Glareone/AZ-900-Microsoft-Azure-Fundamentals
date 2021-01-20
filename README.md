@@ -1159,7 +1159,44 @@ Standard, you get continuous monitoring, threat detection and all the capabiliti
 1) Region depended prices. 
 2) Hour and Monthly costs is available.
 3) Free tier let you overall score and some recommendations. But for example to apply these recommendations for VMs - you need to switch to Standard tier.
- 
+</details>
+
+<details>
+<summary>Module 10: Azure Identity Services. Azure Active Directory (AAD). Azure Privileged Identity Manager (PIM)</summary>
+
+![Azure authentication](images/10-security/4-authentication-authorization.png)
+
+## Active Directory
+Active Directory or Azure AD is:
+
+* Microsoft's cloud based identity service, that can also integrate with your traditional on premises infrastructure.
+All your applications running either in the cloud or on traditional infrastructures can share the same credentials
+And as a result of this, with Azure AD, you can centralize access control to your applications and data,
+with a single pane of glass over identity management.
+
+![Azure AD](images/10-security/5-azuread-capabilities.png)
+![Azure AD](images/10-security/6-ad-capabilities.png)
+
+## Azure Privileged Identity Manager
+* Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage,
+control, and monitor access to important resources in your organization. These resources include resources in Azure AD,
+Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+
+![Azure Privileged Identity Management](images/10-security/7-azure-pim.png)
+
+### Reasons to use
+Organizations want to minimize the number of people who have access to secure information or resources,
+ because that reduces the chance of a malicious actor getting that access, or an authorized user inadvertently impacting a sensitive resource.
+
+1) Time bound access to resources, which means that you will
+define a start time and an end time, when access is provided.
+
+2) Role activation upon approval - for now just imagine that a role will give you privileges.
+So not all your users need the same permissions in order to perform their job. So think that you have multiple roles.
+
+3) Also enforce MFA, so multi factor authentication to activate any role.
+
+4) Get notifications is self-explanatory thing.
 
 </details>
 
