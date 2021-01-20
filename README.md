@@ -1264,6 +1264,25 @@ A role definition is a collection of permissions. It's typically just called a r
 
 </details>
 
+<details>
+<summary>Module 10: Azure Firewall. DoS, DDoS Protection</summary>
+
+## Azure Firewall
+Azure Firewall is a managed cloud based network security service that protects your Azure vNETs.
+![Azure Firewall](images/10-security/19-firewall.png)
+
+* It's very similar to NSG (Network Security Group) configuration.
+![Azure Firewall](images/10-security/20-firewall-2.png)
+
+## Azure DDoS Protection
+![Azure DDos](images/10-security/21-ddos.png)
+
+* Two tiers: Basic and Standard. Basic is free.
+![Azure DDos](images/10-security/22-ddos.png)
+![Azure DDos](images/10-security/23-ddos-types.png)
+
+</details>
+
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
 <details>
