@@ -1228,6 +1228,41 @@ One thing to note is that single sign on can be implemented for both cloud and o
 
 </details>
 
+<details>
+<summary>Module 10: Azure role-based access control (Azure RBAC, Built on Azure Resource Manager). Security Principal, Scope, Role</summary>
+Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.  
+Granular access to your resources.
+
+Here are some examples of what you can do with Azure RBAC:
+
+* Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
+* Allow a DBA group to manage SQL databases in a subscription
+* Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
+* Allow an application to access all resources in a resource group
+
+## How Azure RBAC works
+The way you control access to resources using Azure RBAC is to create role assignments. This is a key concept to understand – it's how permissions are enforced. A role assignment consists of three elements: security principal, role definition, and scope.
+![Azure RBAC](images/10-security/13-rbac-examples.png)
+
+### Security principal
+A security principal is an object that represents a user, group, service principal, or managed identity that is requesting access to Azure resources. You can assign a role to any of these security principals.
+Security principal for a role assignment.
+![security principal](https://docs.microsoft.com/en-us/azure/role-based-access-control/media/shared/rbac-security-principal.png)
+![Azure RBAC](images/10-security/14-rbac-security-principal.png)
+
+### Role definition
+A role definition is a collection of permissions. It's typically just called a role. A role definition lists the operations that can be performed, such as read, write, and delete. Roles can be high-level, like owner, or specific, like virtual machine reader.
+![Role Definition](https://docs.microsoft.com/en-us/azure/role-based-access-control/media/shared/rbac-role-definition.png)
+![Azure RBAC](images/10-security/15-role-definition.png)
+
+### Scope
+![Azure RBAC](images/10-security/16-rbac-scope.png)
+
+### Final Example
+![Azure RBAC](images/10-security/17-rbac-scope-example.png)
+![Azure RBAC](images/10-security/18-rbac-example.png)
+
+</details>
 
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
