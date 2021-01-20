@@ -1302,6 +1302,20 @@ Once this happens, Sentinel will start providing recommendations and visibility.
 
 <details>
 <summary>Module 10: Azure Dedicated Hosts</summary>
+
+* Manage Physical Server within Azure
+![Azure Dedicated Hosts](images/10-security/26-dedicated-hosts.png)
+
+## Charge
+So if you deploy a dedicated host, then you don't run any virtual machines, you will definitely pay the house price, which is based on the virtual machine family type.  
+So this is the hardware side and the region where it is deployed.
+
+## Advantages
+![Azure Dedicated Hosts](images/10-security/27-dedicated-hosts-advantages.png)
+
+## Configurations and options
+![Azure Dedicated Hosts](images/10-security/28-dedicated-hosts-configurationpng.png)
+  
 </details>
 
 <details>
