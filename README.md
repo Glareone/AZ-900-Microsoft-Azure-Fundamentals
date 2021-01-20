@@ -1081,6 +1081,275 @@ alerting and streaming to external systems.
 
 
 # Module 10. Security in Azure Cloud.
+
+<details>
+<summary>Module 10: Cloud Shared Responsibility.</summary>
+
+Link: [Module-10 Azure Cloud Shared Responsibility](pdf-files/module-10/10.2+Azure+Cloud+Shared+Responsibility+Model.pdf)  
+
+When you hear cloud share responsibility model, you really must think security.
+It's about the responsibilities and how you manage security in your cloud or hybrid environment.
+
+In general,
+Well responsibility is shared between the cloud provider and the client or customer.  
+The responsibility level depends on the type of applications run in the cloud, but also on the cloud deployment model.
+![Azure Shared Responsibility](images/10-security/1-shared-responsibility.png)
+
+# Security. Defence.
+Think of it like about onion, in the middle - sensitive data, layers - security layers.  
+## Physical security.
+The first layer of defense is physical security and that is really the cloud provider's responsibility.  
+Data center security with cameras, restricted access, trained personnel and so on
+
+## Identity. Access-based security. (SSO, MFA)
+You can think of this step as implementing SSO, so Single Sign-On and MFA (Multi-factor authentication).
+
+## Network security protection (Ddos-protection, firewall)
+So DDoS protection, Distributed Denial of Service protection and firewall security should be taken into consideration, at this step.
+
+## Restrict or limit network connectivity
+1) You should deny inbound internet access. NSG Configuration.   
+
+2) Limit the connectivity between resources.
+You should limit connectivity between resources in the same vNET, but also between virtual networks.
+**Example if your VM or service is compromised inside Azure cloud, you don't want for the hacker to be able to jump from the compromised resource to another one.**
+
+3) Security to your own premises data center should be taken into consideration.
+So if you're running in a hybrid cloud environment and you also have your traditional data center connected to Azure cloud,
+well some security should be implemented for the connection between the data center and Azure cloud.
+
+4) Security for compute
+Consist of patching your VMs, implement endpoint protection. **Endpoint Protection is similar to how you install, for example, an antivirus on your laptop or workstation.**  
+**Implement secure access to VMs.**
+
+5) Security for application
+Implement security in app dev lifecycle. So actually this means that you should integrate security while building the application and not enforcing
+security after the application has been built and developed.
+
+6) Data Security
+So security of the data itself.  
+So this is customer's responsibility.
+* Data stored in Databases
+* VM disks
+* Cloud storages
+
+</details>
+
+<details>
+<summary>Module 10: Azure Security Center.(In Free tier only recommendations and overall score)</summary>
+
+Link: [Azure Sec Center Link](https://azure.microsoft.com/en-us/services/security-center/?&ef_id=CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&OCID=AID2100643_SEM_CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&dclid=CLym9bbsqu4CFelAkQUdAwoGFg#security)
+
+![Azure Security Center](images/10-security/2-Security-center.png)
+1) Strengthen security posture means that Azure Security Center identifies security issues and implements best practices across your machines,
+2) Protect against threats. Azure Security Center evaluates workloads and raises threat prevention recommendations and security **alerts**.
+3) While get secure faster means that the security is really implemented at cloud speed.
+
+## Azure Security Center Options. Free and Standard
+1) Free tier  
+   1.1) Well this tier is limited to assessments and recommendations  
+   1.2) And you also get an overall **Azure secure score.**
+   
+2) Standard tier
+Standard, you get continuous monitoring, threat detection and all the capabilities Azure Security Center supports.
+
+![Azure Security Center](images/10-security/3-security-center-options.png)
+
+## TIPS
+1) Region depended prices. 
+2) Hour and Monthly costs is available.
+3) Free tier let you overall score and some recommendations. But for example to apply these recommendations for VMs - you need to switch to Standard tier.
+</details>
+
+<details>
+<summary>Module 10: Azure Identity Services. Azure Active Directory (AAD). Azure Privileged Identity Manager (PIM). MFA (Milti-factor Auth)</summary>
+
+![Azure authentication](images/10-security/4-authentication-authorization.png)
+
+## Active Directory
+Active Directory or Azure AD is:
+
+* Microsoft's cloud based identity service, that can also integrate with your traditional on premises infrastructure.
+All your applications running either in the cloud or on traditional infrastructures can share the same credentials
+And as a result of this, with Azure AD, you can centralize access control to your applications and data,
+with a single pane of glass over identity management.
+
+![Azure AD](images/10-security/5-azuread-capabilities.png)
+![Azure AD](images/10-security/6-ad-capabilities.png)
+
+## Azure Privileged Identity Manager
+* Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage,
+control, and monitor access to important resources in your organization. These resources include resources in Azure AD,
+Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+
+![Azure Privileged Identity Management](images/10-security/7-azure-pim.png)
+
+### Reasons to use
+Organizations want to minimize the number of people who have access to secure information or resources,
+ because that reduces the chance of a malicious actor getting that access, or an authorized user inadvertently impacting a sensitive resource.
+
+1) Time bound access to resources, which means that you will
+define a start time and an end time, when access is provided.
+
+2) Role activation upon approval - for now just imagine that a role will give you privileges.
+So not all your users need the same permissions in order to perform their job. So think that you have multiple roles.
+
+3) Also enforce MFA, so multi factor authentication to activate any role.
+
+4) Get notifications is self-explanatory thing.
+
+## MFA. Multi-factor authentication
+![Azure MFA](images/10-security/8-mfa.png)
+![Azure MFA](images/10-security/9-mfa2.png)
+
+</details>
+
+<details>
+<summary>Module 10: Conditional Access. Single Sign-On (SSO). Application Proxy</summary>
+
+## Conditional Access
+![Azure Conditional Access](images/10-security/10-Conditional-access.png)
+![Azure Conditional Access](images/10-security/11-Conditional-access-2.png)
+
+## SSO. Application Proxy (for on-premise apps)
+SSO allows users to log in once and have access to various applications without having to go through the same identity verification process each time.  
+This great capability is free and integrated with any Azure ad subscription.
+
+* Example: Let's cover one popular example with SSO where applications are really popular these days and these are offered as a service.
+You can think of Microsoft 365 Salesforce.  
+So you sign up for the service and you can start using it right away.  
+You only need to authenticate first.  
+Once you authenticate, single sign on makes it possible for the users to navigate between the various
+web applications again without having to sign in multiple times.  
+One thing to note is that single sign on can be implemented for both cloud and on premises applications.  
+
+* SSO Works with hybrib clouds as well.
+![Azure App Proxy](images/10-security/12-sso.png)
+
+</details>
+
+<details>
+<summary>Module 10: Azure role-based access control (Azure RBAC, Built on Azure Resource Manager). Security Principal, Scope, Role</summary>
+Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to.  
+Granular access to your resources.
+
+Here are some examples of what you can do with Azure RBAC:
+
+* Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
+* Allow a DBA group to manage SQL databases in a subscription
+* Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
+* Allow an application to access all resources in a resource group
+
+## How Azure RBAC works
+The way you control access to resources using Azure RBAC is to create role assignments. This is a key concept to understand – it's how permissions are enforced. A role assignment consists of three elements: security principal, role definition, and scope.
+![Azure RBAC](images/10-security/13-rbac-examples.png)
+
+### Security principal
+A security principal is an object that represents a user, group, service principal, or managed identity that is requesting access to Azure resources. You can assign a role to any of these security principals.
+Security principal for a role assignment.
+![security principal](https://docs.microsoft.com/en-us/azure/role-based-access-control/media/shared/rbac-security-principal.png)
+![Azure RBAC](images/10-security/14-rbac-security-principal.png)
+
+### Role definition
+A role definition is a collection of permissions. It's typically just called a role. A role definition lists the operations that can be performed, such as read, write, and delete. Roles can be high-level, like owner, or specific, like virtual machine reader.
+![Role Definition](https://docs.microsoft.com/en-us/azure/role-based-access-control/media/shared/rbac-role-definition.png)
+![Azure RBAC](images/10-security/15-role-definition.png)
+
+### Scope
+![Azure RBAC](images/10-security/16-rbac-scope.png)
+
+### Final Example
+![Azure RBAC](images/10-security/17-rbac-scope-example.png)
+![Azure RBAC](images/10-security/18-rbac-example.png)
+
+</details>
+
+<details>
+<summary>Module 10: Azure Firewall. DoS, DDoS Protection</summary>
+
+## Azure Firewall
+Azure Firewall is a managed cloud based network security service that protects your Azure vNETs.
+![Azure Firewall](images/10-security/19-firewall.png)
+
+* It's very similar to NSG (Network Security Group) configuration.
+![Azure Firewall](images/10-security/20-firewall-2.png)
+
+## Azure DDoS Protection
+![Azure DDos](images/10-security/21-ddos.png)
+
+* Two tiers: Basic and Standard. Basic is free.
+![Azure DDos](images/10-security/22-ddos.png)
+![Azure DDos](images/10-security/23-ddos-types.png)
+
+</details>
+
+<details>
+<summary>Module 10: Azure Sentinel (consist of SIEM "Security Information Event Manager" and SOAR Security Orchestration Auromated Response)</summary>
+
+* For clouds and on-premise as well.
+
+![Azure Sentinel](images/10-security/24-sentinel.png)
+* Well, as a sentinel needs to be connected to the different services that you may be running.
+For example, Microsoft 365, including here, Office 365, Azure AD, Microsoft 365 or Defender and other more.
+And by connecting Sentinel with the various Microsoft solutions you may be using, Sentinel will start to receive data and events that appear throughout your organization.
+Once this happens, Sentinel will start providing recommendations and visibility.
+
+![Azure Sentinel](images/10-security/25-sentinel-2.png)
+
+**Tips: Can automate common tasks in Azure Security Center**
+
+</details>
+
+<details>
+<summary>Module 10: Azure Dedicated Hosts</summary>
+
+* Manage Physical Server within Azure
+![Azure Dedicated Hosts](images/10-security/26-dedicated-hosts.png)
+
+## Charge
+So if you deploy a dedicated host, then you don't run any virtual machines, you will definitely pay the house price, which is based on the virtual machine family type.  
+So this is the hardware side and the region where it is deployed.
+
+## Advantages
+![Azure Dedicated Hosts](images/10-security/27-dedicated-hosts-advantages.png)
+
+## Configurations and options
+![Azure Dedicated Hosts](images/10-security/28-dedicated-hosts-configurationpng.png)
+  
+</details>
+
+<details>
+<summary>Module 10: Azure Encryption(Azure Storage Service Encryption, Azure Transparent Data Encryption), Key Vault (Name-Pass storage)</summary>
+
+# Encryption
+![Azure Encryption](images/10-security/29-encryption.png)
+
+# Encryption at Rest, in Transit
+* Azure Transparent Data Encryption - for SQL
+* Azure Storage Service Encryption
+![Azure Encryption](images/10-security/30-encryption-rest-transit.png)
+![Azure Encryption](images/10-security/31-SSE-TDE.png)
+
+# Azure Key Vault
+![Azure Key Vault](images/10-security/32-Azure-Key-Vault.png)
+
+</details>
+
+<details>
+<summary>Module 10: AIP, ATP (Advanced Threat Protection)</summary>
+
+# ATP - Advanced Threat Protection
+![Azure ATP](images/10-security/33-ATP.png)
+## ATP Sensors, ATP Portal, ATP Cloud Service
+![Azure ATP](images/10-security/34-atp-2.png)
+
+# AIP - to classify and (!optionally) protects its documentation and emails by applying labels
+![Azure AIP](images/10-security/35-aip.png)
+* Labels applied automatically based on information in email
+![Azure AIP](images/10-security/36-aip.png)
+
+</details>
+
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
 <details>
