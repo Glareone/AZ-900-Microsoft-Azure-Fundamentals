@@ -1136,7 +1136,7 @@ So this is customer's responsibility.
 </details>
 
 <details>
-<summary>Module 10: Azure Security Center.</summary>
+<summary>Module 10: Azure Security Center.(In Free tier only recommendations and overall score)</summary>
 
 Link: [Azure Sec Center Link](https://azure.microsoft.com/en-us/services/security-center/?&ef_id=CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&OCID=AID2100643_SEM_CjwKCAiAxp-ABhALEiwAXm6IyZGtjND0Hn9WXOvvAJ3UoIGjAeCcRMJRH_hwhtGNjg-Qyif3kQJbChoCp8cQAvD_BwE:G:s&dclid=CLym9bbsqu4CFelAkQUdAwoGFg#security)
 
@@ -1158,6 +1158,8 @@ Standard, you get continuous monitoring, threat detection and all the capabiliti
 ## TIPS
 1) Region depended prices. 
 2) Hour and Monthly costs is available.
+3) Free tier let you overall score and some recommendations. But for example to apply these recommendations for VMs - you need to switch to Standard tier.
+ 
 
 </details>
 
