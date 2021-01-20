@@ -1336,7 +1336,18 @@ So this is the hardware side and the region where it is deployed.
 </details>
 
 <details>
-<summary>Module 10: AIP, ATP</summary>
+<summary>Module 10: AIP, ATP (Advanced Threat Protection)</summary>
+
+# ATP - Advanced Threat Protection
+![Azure ATP](images/10-security/33-ATP.png)
+## ATP Sensors, ATP Portal, ATP Cloud Service
+![Azure ATP](images/10-security/34-atp-2.png)
+
+# AIP - to classify and (!optionally) protects its documentation and emails by applying labels
+![Azure AIP](images/10-security/35-aip.png)
+* Labels applied automatically based on information in email
+![Azure AIP](images/10-security/36-aip.png)
+
 </details>
 
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
