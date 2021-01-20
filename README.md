@@ -1283,6 +1283,35 @@ Azure Firewall is a managed cloud based network security service that protects y
 
 </details>
 
+<details>
+<summary>Module 10: Azure Sentinel (consist of SIEM "Security Information Event Manager" and SOAR Security Orchestration Auromated Response)</summary>
+
+* For clouds and on-premise as well.
+
+![Azure Sentinel](images/10-security/24-sentinel.png)
+* Well, as a sentinel needs to be connected to the different services that you may be running.
+For example, Microsoft 365, including here, Office 365, Azure AD, Microsoft 365 or Defender and other more.
+And by connecting Sentinel with the various Microsoft solutions you may be using, Sentinel will start to receive data and events that appear throughout your organization.
+Once this happens, Sentinel will start providing recommendations and visibility.
+
+![Azure Sentinel](images/10-security/25-sentinel-2.png)
+
+**Tips: Can automate common tasks in Azure Security Center**
+
+</details>
+
+<details>
+<summary>Module 10: Azure Dedicated Hosts</summary>
+</details>
+
+<details>
+<summary>Module 10: Azure Encryption, Key Vault (Name-Pass storage)</summary>
+</details>
+
+<details>
+<summary>Module 10: AIP, ATP</summary>
+</details>
+
 # Module 11. Azure Pricing. Azure Support Options. Cost Management. Service level Agreements.
 
 <details>
