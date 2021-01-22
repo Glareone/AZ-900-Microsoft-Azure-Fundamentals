@@ -1,5 +1,5 @@
-# AZ-900-Microsoft-Fundamentals
-Materials come from AZ-900 Microsoft Fundamentals Bootcamp
+# AZ-900-Microsoft-Azure-Fundamentals
+Materials come from AZ-900 Microsoft Azure Fundamentals Bootcamp
 
 # Skills measured
 Describe cloud concepts (15-20%)  
