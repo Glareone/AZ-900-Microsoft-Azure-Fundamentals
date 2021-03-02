@@ -1490,4 +1490,10 @@ Only if you're using SQL Server running in Azure VMs. For the Managed Instances 
 * Once i delete my VM, will I be able to recover it?
 You can't recover a VM after it was deleted. We´ll talk about protecting resources by using locks tomorrow
 
+* What Hypervisor is used in Azure?
+The Azure hypervisor system is based on Windows Hyper-V
+
+* Do you recommend taking AZ-900 exam after day 2, or should we complete the Online Free Learning Paths from Microsoft first?
+Everyone's studying and test taking habits are different. My recommendation is that you utilize the free learning path at https://aka.ms/azfunpath to review the material and ensure that you are comfortable with all the material.
+
 </details> 
