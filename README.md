@@ -1457,3 +1457,35 @@ Users can test the new products or services before the official release and prov
 **Some of the previews are not covered by customer support**
 
 </details>
+
+<details>
+<summary>Bootcamp Q&A. Additional Info. Azure Backup MARS agent(Azure Backup agent).</summary>
+ 
+ * What is the location of the additional learning resources for this course mentioned in the presentation.
+Our Learning Path is available at: [Azure Information Portal](https://aka.ms/azfunpath)
+ 
+ * Azure Backup MARS agent: [Link](https://docs.microsoft.com/en-us/azure/backup/install-mars-agent)
+MARS agent stands for Microsoft Azure Recovery Services Agent. It's an agent that controls the Backup services in your local machine, if you're using Azure Backup
+
+* What is Bastion connection?
+Azure Bastion is a service you can use to connect to your VMs without needing a public IP address for each VM. It works at the VNet level.
+
+ * What is difference between ASR(Azure Site Recovery) and ASM(Azure Server Migration)?
+ASM is used to migrate workloads from On-Prem to Azure. ASR is used to create a secondary site for your workloads in case of a disaster.
+
+* are the IaaS, PaaS, and SaaS models all part of Hybrid Cloud systems?
+You can use any of those models in a Hybrid Cloud environment
+
+* What's the difference between "High Availability" and "Fault Tolerance". Same thing with Elasticity and Scalability?
+High Availability is the capacity of running your workloads with le least amount of disruptions. Fault Tolerance is the ability to tolerate a certain amount of failures in the different components of your workload without service interruption.
+
+* Would a Hybrid Cloud require a backbone connection like Azure ExpressRoute?
+A Hybrid Cloud would require a connection between On-Prem and Azure. You can use a VPN or ExpressRoute.
+ 
+* Can we choose older vesions of SQL Server to work with?
+Only if you're using SQL Server running in Azure VMs. For the Managed Instances and Azure SQL DB, you always use the latest stable version
+
+* Once i delete my VM, will I be able to recover it?
+You can't recover a VM after it was deleted. We´ll talk about protecting resources by using locks tomorrow
+
+</details> 
